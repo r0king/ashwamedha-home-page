@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/ashwamedha-home-page/static/css/main.7a8650aa.css",
-    "main.js": "/ashwamedha-home-page/static/js/main.d665011c.js",
-    "static/js/787.ee564383.chunk.js": "/ashwamedha-home-page/static/js/787.ee564383.chunk.js",
-    "static/media/logo.svg": "/ashwamedha-home-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/ashwamedha-home-page/index.html",
-    "main.7a8650aa.css.map": "/ashwamedha-home-page/static/css/main.7a8650aa.css.map",
-    "main.d665011c.js.map": "/ashwamedha-home-page/static/js/main.d665011c.js.map",
-    "787.ee564383.chunk.js.map": "/ashwamedha-home-page/static/js/787.ee564383.chunk.js.map"
+    "main.css": "/react-template/static/css/main.a3c38849.css",
+    "main.js": "/react-template/static/js/main.ee922ab8.js",
+    "static/js/787.fa3c4679.chunk.js": "/react-template/static/js/787.fa3c4679.chunk.js",
+    "static/media/bgvideo.mp4": "/react-template/static/media/bgvideo.3cbc850ca6f3283b4d23.mp4",
+    "static/media/logo.svg": "/react-template/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-template/index.html",
+    "main.a3c38849.css.map": "/react-template/static/css/main.a3c38849.css.map",
+    "main.ee922ab8.js.map": "/react-template/static/js/main.ee922ab8.js.map",
+    "787.fa3c4679.chunk.js.map": "/react-template/static/js/787.fa3c4679.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a8650aa.css",
-    "static/js/main.d665011c.js"
+    "static/css/main.a3c38849.css",
+    "static/js/main.ee922ab8.js"
   ]
 }
