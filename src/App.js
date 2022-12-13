@@ -4,17 +4,14 @@ import "animate.css/animate.min.css";
 import Card from "./componets/Card";
 import Install from "./componets/Install";
 import Hero from "./componets/Hero";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Event from "./componets/Event";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/hero" element={<Hero/>}/>
-        <Route path="/ex" element={<Card/>}/>
-        <Route exact path="/:name/" element={<Install />} />
-      </Routes>
-    </BrowserRouter>
+  <div>
+    <Hero/>
+    <Event/>
+  </div>
   );
 }
 
