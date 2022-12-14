@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../assests/logo.png";
+import Logo2 from "../assests/logo_crop.png";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ export default class Navbar extends Component {
         <nav className="bg-transparent rounded fixed z-20 w-screen mb-3 border-neutral-content border-b-2" style={{opacity}}>
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <a href="#home" className="flex items-center">
-              <img src={Logo} className="mr-3 h-[5vh] sm:h-[10vh]" alt="Logo" />
+              <img src={Logo2} className="invert ml-2 px-2 py-2 h-[5vh] sm:h-[10vh]" alt="Logo" />
               {/* <span className="self-center text-xl font-semibold text-white whitespace-nowrap">
               Teqard labs
             </span> */}
@@ -127,7 +127,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#contact"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 mr-7 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Contact
                   </a>
