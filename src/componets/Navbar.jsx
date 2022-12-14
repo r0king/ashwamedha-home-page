@@ -1,4 +1,4 @@
-import React, { Component , useState, useEffect  } from 'react'
+import React, { Component } from 'react'
 import Logo from '../assests/Logo.png'
 
 export default class Navbar extends Component {
