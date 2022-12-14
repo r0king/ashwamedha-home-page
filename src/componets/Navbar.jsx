@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component , useState, useEffect  } from 'react'
 import Logo from '../assests/Logo.png'
 
 export default class Navbar extends Component {
@@ -9,6 +9,8 @@ this.state = {
   };
   this.navItems = React.createRef();
 }
+
+
 handleNavclick = async (e) => {
   if (this.state.toggle) {
     this.navItems.current.classList.remove("hidden");
@@ -29,21 +31,21 @@ render() {
   return (
     <div>
       <nav className="bg-transparent px-2 sm:px-4 py-2.5 rounded fixed z-20 w-screen">
-        <div className="container flex flex-wrap justify-between items-center mx-auto">
+        <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="#home" className="flex items-center">
             <img
               src={Logo}
               className="mr-3 h-[9vh] sm:h-[12vh]"
               alt="Logo"
             />
-            {/* <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
+            {/* <span className="self-center text-xl font-semibold text-white whitespace-nowrap">
               Teqard labs
             </span> */}
           </a>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden text-gray-400 hover:bg-transparent focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-3 text-sm text-gray-400 rounded-lg md:hidden hover:bg-transparent focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
             onClick={this.handleNavclick}
@@ -68,11 +70,11 @@ render() {
             className="hidden w-full md:block md:w-auto"
             id="navbar-default"
           >
-            <ul className="flex flex-col p-4 mt-4 bg-transparent md:rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+            <ul className="flex flex-col p-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
               <li>
                 <a
                   href="#home"
-                  className="block py-2 pr-4 pl-3 rounded text-end  hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   aria-current="page"
                 >
                   Home
@@ -81,7 +83,7 @@ render() {
               <li>
                 <a
                   href="#anatomy"
-                  className="block py-2 pr-4 pl-3 rounded text-end  hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                 >
                   About
                 </a>
@@ -89,7 +91,7 @@ render() {
               <li>
                 <a
                   href="#community"
-                  className="block py-2 pr-4 pl-3 rounded text-end  hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                 >
                   Events
                 </a>
@@ -97,7 +99,7 @@ render() {
               <li>
                 <a
                   href="#contact"
-                  className="block py-2 pr-4 pl-3 rounded text-end  hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                 >
                   Guests
                 </a>
@@ -105,7 +107,7 @@ render() {
               <li>
                 <a
                   href="#contact"
-                  className="block py-2 pr-4 pl-3 rounded text-end  hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                 >
                   Highlights
                 </a>
@@ -113,7 +115,7 @@ render() {
               <li>
                 <a
                   href="#contact"
-                  className="block py-2 pr-4 pl-3 rounded text-end  hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                 >
                   Contact
                 </a>
