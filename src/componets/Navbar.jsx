@@ -86,7 +86,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#home"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                     aria-current="page"
                   >
                     Home
@@ -95,7 +95,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#anatomy"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                   >
                     About
                   </a>
@@ -103,7 +103,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#community"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                   >
                     Events
                   </a>
@@ -111,7 +111,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#contact"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                   >
                     Guests
                   </a>
@@ -119,7 +119,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#contact"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                   >
                     Highlights
                   </a>
@@ -127,7 +127,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="#contact"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                   >
                     Contact
                   </a>

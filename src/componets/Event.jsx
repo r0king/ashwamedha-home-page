@@ -8,25 +8,24 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-/* Install pure-react-carousel using -> npm i pure-react-carousel */
-
 export default class Event extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       slides: [],
     };
+    this.slides = [
+      { event: "Event 1", date: "Date 1", time: "Time 1", venue: "Venue 1" ,content:"Details about Event 1 on date 1 and time 1 at venue 1"},
+      { event: "Event 2", date: "Date 2", time: "Time 2", venue: "Venue 2" ,content:"Details about Event 2 on date 2 and time 2 at venue 2"},
+      { event: "Event 3", date: "Date 3", time: "Time 3", venue: "Venue 3" ,content:"Details about Event 3 on date 3 and time 3 at venue 3"},
+      { event: "Event 4", date: "Date 4", time: "Time 4", venue: "Venue 4" ,content:"Details about Event 4 on date 4 and time 4 at venue 4"},
+      { event: "Event 5", date: "Date 5", time: "Time 5", venue: "Venue 5" ,content:"Details about Event 5 on date 5 and time 5 at venue 5"},
+      { event: "Event 6", date: "Date 6", time: "Time 6", venue: "Venue 6" ,content:"Details about Event 6 on date 6 and time 6 at venue 6"},
+      { event: "Event 7", date: "Date 7", time: "Time 7", venue: "Venue 7" ,content:"Details about Event 7 on date 7 and time 7 at venue 7"},
+    ];
   }
   componentDidMount() {
-    const slides = [
-      { event: "Event 1", date: "Date 1", time: "Time 1", venue: "Venue 1" },
-      { event: "Event 2", date: "Date 2", time: "Time 2", venue: "Venue 2" },
-      { event: "Event 3", date: "Date 3", time: "Time 3", venue: "Venue 3" },
-      { event: "Event 4", date: "Date 4", time: "Time 4", venue: "Venue 4" },
-      { event: "Event 5", date: "Date 5", time: "Time 5", venue: "Venue 5" },
-      { event: "Event 6", date: "Date 6", time: "Time 6", venue: "Venue 6" },
-      { event: "Event 7", date: "Date 7", time: "Time 7", venue: "Venue 7" },
-    ];
+    const slides = this.slides;
     let slidesHtml = [];
     slides.forEach((slide) => {
       slidesHtml.push(
@@ -35,9 +34,9 @@ export default class Event extends React.Component {
             <img
               src="https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg"
               alt="black chair and white table"
-              className="object-cover object-center w-full"
+              className="object-cover object-center w-full "
             />
-            <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+            <div className= "bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 ">
               <h2 className="lg:text-xl font-bold leading-4 text-base lg:leading-5 text-primary">
                 {slide.venue}
               </h2>
@@ -51,6 +50,7 @@ export default class Event extends React.Component {
                 </h3>
               </div>
             </div>
+
           </div>
         </Slide>
       );

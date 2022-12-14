@@ -24,7 +24,7 @@ export default class Hero extends Component {
             width={window.innerWidth}
             className="h-[80vh] bg-black/[0.7] z-10 lg:h-[100vh]"
           >
-            <div className="flex justify-between">
+            <div className="flex justify-between flex-col md:flex-row">
               <img
                 src={Logo}
                 alt=""
