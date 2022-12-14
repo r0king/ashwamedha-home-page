@@ -112,7 +112,7 @@ export default class Event extends React.Component {
                     {this.state.slides}
                   
                   
-                  <button class="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
+                  <button className="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
                   </div>
                 </Slider>
               </div>
@@ -181,7 +181,7 @@ export default class Event extends React.Component {
                     className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                   >
                     {this.state.slides}
-                    <button class="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
+                    <button className="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
 
                   </div>
                 </Slider>
@@ -252,7 +252,7 @@ export default class Event extends React.Component {
                   >
                     {" "}
                     {this.state.slides}
-                    <button class="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
+                    <button className="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
 
                   </div>
                 </Slider>
@@ -335,7 +335,7 @@ export default class Event extends React.Component {
                     className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                   >
                     {this.state.slides}
-                    <button class="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
+                    <button className="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
 
                   </div>
                 </Slider>
@@ -405,7 +405,7 @@ export default class Event extends React.Component {
                     className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                   >
                     {this.state.slides}
-                    <button class="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
+                    <button className="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
 
                   </div>
                 </Slider>
@@ -476,7 +476,7 @@ export default class Event extends React.Component {
                   >
                     {" "}
                     {this.state.slides}
-                    <button class="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
+                    <button className="ml-4 mr-16 rounded-full bg-black hover:bg-orange-400 border-2 border-orange-400 w-[15vh] h-[6vh] justify-center text-white text-sm ">View More</button>
 
                   </div>
                 </Slider>
