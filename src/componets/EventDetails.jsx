@@ -11,7 +11,7 @@ export class EventDetails extends Component {
     this.events = [
       {
         id: 0,
-        event: "Event 0",
+        name: "Event 0",
         date: "Date 0",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 0",
@@ -20,7 +20,7 @@ export class EventDetails extends Component {
       },
       {
         id: 1,
-        event: "Event 1",
+        name: "Event 1",
         date: "Date 1",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 1",
@@ -29,7 +29,7 @@ export class EventDetails extends Component {
       },
       {
         id: 2,
-        event: "Event 2",
+        name: "Event 2",
         date: "Date 2",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 2",
@@ -38,7 +38,7 @@ export class EventDetails extends Component {
       },
       {
         id: 3,
-        event: "Event 3",
+        name: "Event 3",
         date: "Date 3",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 3",
@@ -47,7 +47,7 @@ export class EventDetails extends Component {
       },
       {
         id: 4,
-        event: "Event 4",
+        name: "Event 4",
         date: "Date 4",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 4",
@@ -56,7 +56,7 @@ export class EventDetails extends Component {
       },
       {
         id: 5,
-        event: "Event 5",
+        name: "Event 5",
         date: "Date 5",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 5",
@@ -65,7 +65,7 @@ export class EventDetails extends Component {
       },
       {
         id: 6,
-        event: "Event 6",
+        name: "Event 6",
         date: "Date 6",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 6",
@@ -74,36 +74,39 @@ export class EventDetails extends Component {
       },
       {
         id: 7,
-        event: "Event 7",
+        name: "Event 7",
         date: "Date 7",
         src: "https://rukminim1.flixcart.com/image/416/416/jiw10280/poster/6/7/2/large-gr2-don-t-forget-to-be-awesome-greatitude-wall-posters-12-original-imaf6j9jzfghq2fs.jpeg?q=70",
         time: "Time 7",
         venue: "Venue 7",
-        content: "Details about Event 7 on date 7 and time 7 at venue 7",
+        content: "Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7Details about Event 7 on date 7 and time 7 at venue 7",
       },
     ];
     this.event = this.events[this.props.params.name];
   }
-  componentDidMount() {}
+  componentDidMount() { }
 
   render() {
     return (
-      // <div className='bg-netral'>Install {this.props.params.name}</div>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src={this.event.src}
-            className="max-w-sm rounded-lg shadow-2xl"
-            alt={this.event.event}
-          />
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+      <div className="hero min-h-screen bg-base-200 flex">
+        <div className="h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 flex m-4 md:p-3 md:mx-16 md:my-4">
+          <div className="hero-content flex flex-col justify-center md:flex-row">
+            <img
+              src={this.event.src}
+              className="max-w-sm rounded-lg shadow-2xl w-full max-h-[80vh] md:w-[50vw]"
+              alt={this.event.event}
+            />
+            <div className="h-full md:w-1/2 text-primary-focus">
+              <h1 className="text-5xl font-bold text-neutral-content">{this.event.name}</h1>
+              <h1 className="text-1xl font-bold text-primary-focus">{this.event.date} | {this.event.time}</h1>
+              <h1 className="text-1xl font-bold text-neutral-content">{this.event.venue} </h1>
+              <div className="h-[60vh] overflow-y-auto overflow-x-hidden">
+                <p className="py-6">
+                  {this.event.content}
+                </p>
+              </div>
+              <button className="btn btn-outline mt-4 text-neutral-content ">Register</button>
+            </div>
           </div>
         </div>
       </div>
