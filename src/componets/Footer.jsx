@@ -20,16 +20,19 @@ class Footer extends Component {
               Press kit
             </a>
           </div>
+          <div className="flex flex-col justify-start">
           <iframe
           title="Ashwamedha 22"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.0305853969758!2d76.4282693141676!3d10.178169272735238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1671036443844!5m2!1sen!2sin"
-          className="w-[90vw] m-auto"
-          height={450}
+          className="w-[25vw] m-auto"
+          height={350}
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
+        </div>
+
           <div>
             <div className="grid grid-flow-col gap-4">
               <a href="https://www.tweeter.com">
