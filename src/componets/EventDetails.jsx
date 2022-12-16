@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import videoplayback from "../assests/Golden Stars.mp4"
 import { useParams } from "react-router-dom";
-import eventData from "../assests/eventData.json";
+import eventData from "../assests/events.json";
 function withParams(Component) {
   return (props) => <Component {...props} params={useParams()} />;
 }
