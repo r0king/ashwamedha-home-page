@@ -15,7 +15,7 @@ export default class HomePage extends Component {
         <Event />
         <Guest />
         <Highlight />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
