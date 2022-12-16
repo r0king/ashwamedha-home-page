@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Logo2 from "../assests/logo_crop.png";
-
 export default class About extends Component {
   render() {
     return (
