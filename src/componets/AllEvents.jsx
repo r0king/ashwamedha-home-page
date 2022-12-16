@@ -56,7 +56,7 @@ export default class AllEvents extends Component {
             <div>
                 <Navbar />
                 <section className="py-6 text-gray-50">
-	<div className="container grid grid-cols-2 gap-4 p-4 mx-auto mt-16 md:grid-cols-4">
+	<div className="container grid grid-cols-2 gap-4 p-4 mx-auto mt-16 md:grid-cols-4 ">
     <img src="https://wallpaperaccess.com/full/2592104.jpg" alt="" className="w-full h-full col-span-2 row-span-2 bg-gray-500 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 aspect-square" />
 		<img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />
 		<img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />
@@ -82,6 +82,37 @@ export default class AllEvents extends Component {
         
 	</div>
 </section>
+<div className="container items-center px-4 py-8 mx-auto lg:px-32 ">
+  <div className="grid grid-flow-col grid-cols-4 grid-rows-4 gap-2">
+  <div className="w-full ">
+      <img src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full">
+      <img src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full col-span-2 row-span-2">
+      <img src="https://images.unsplash.com/photo-1586921829167-409624a3734a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full ">
+      <img src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full">
+      <img src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full col-span-2 row-span-2">
+      <img src="https://images.unsplash.com/photo-1586921829167-409624a3734a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full col-span-2">
+      <img src="https://images.unsplash.com/photo-1534531173927-aeb928d54385?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full">
+      <img src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+    <div className="w-full">
+      <img src="https://images.unsplash.com/photo-1489981424607-45c58daf0581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Photo by Claudio Schwarz on Unsplash" className="inset-0 object-cover object-center w-full h-full rounded opacity-75 hover:opacity-100 " />
+    </div>
+  </div>
+</div>
             </div>
         )
     }
