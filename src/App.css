@@ -1,0 +1,11 @@
+
+.notdisplayed {
+    display: none;
+  }
+  
+  .displayed {
+    display: flex;
+    height: 20px;
+    margin: auto;
+  }
+  

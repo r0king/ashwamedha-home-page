@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import {
-    Slider,
-    Slide,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
 
 
 export default class AllEvents extends Component {
@@ -29,7 +24,7 @@ export default class AllEvents extends Component {
         slides.forEach((slide) => {
             slidesHtml.push(
                 <div index={this.state.slides.length}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto max-w-[20vw] min-h-[450px] transition duration-500 hover:scale-110">
+                    <div className="flex flex-shrink-0 relative sm:w-auto lg:max-w-[20vw] max-w-[75vw] min-h-[450px] transition duration-500 hover:scale-110 hover:opacity-30">
                         <img
                             src="https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg"
                             alt="black chair and white table"
@@ -65,7 +60,7 @@ export default class AllEvents extends Component {
 
                         <div
                             id="slider"
-                            className="flex lg:gap-8 md:gap-6 gap-14 items-center justify-center flex-wrap space-x-4 space-y-4"
+                            className="flex lg:gap-8 md:gap-6 gap-14 items-center justify-center flex-wrap"
                         >
                             {this.state.slides}
                         </div>
