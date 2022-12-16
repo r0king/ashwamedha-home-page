@@ -6,9 +6,9 @@ export default class AllEvents extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            slides: [],
+           // slides: [],
         };
-        this.slides = [
+        /*this.slides = [
             { event: "Event 1", date: "Date 1", time: "Time 1", venue: "Venue 1", content: "Details about Event 1 on date 1 and time 1 at venue 1" },
             { event: "Event 2", date: "Date 2", time: "Time 2", venue: "Venue 2", content: "Details about Event 2 on date 2 and time 2 at venue 2" },
             { event: "Event 3", date: "Date 3", time: "Time 3", venue: "Venue 3", content: "Details about Event 3 on date 3 and time 3 at venue 3" },
@@ -16,9 +16,9 @@ export default class AllEvents extends Component {
             { event: "Event 5", date: "Date 5", time: "Time 5", venue: "Venue 5", content: "Details about Event 5 on date 5 and time 5 at venue 5" },
             { event: "Event 6", date: "Date 6", time: "Time 6", venue: "Venue 6", content: "Details about Event 6 on date 6 and time 6 at venue 6" },
             { event: "Event 7", date: "Date 7", time: "Time 7", venue: "Venue 7", content: "Details about Event 7 on date 7 and time 7 at venue 7" },
-        ];
+        ];*/
     }
-    componentDidMount() {
+    /*componentDidMount() {
         const slides = this.slides;
         let slidesHtml = [];
         slides.forEach((slide) => {
@@ -30,16 +30,16 @@ export default class AllEvents extends Component {
                             alt="black chair and white table"
                             className="object-cover object-center w-full "
                         />
-                        <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 ">
-                            <h2 className="lg:text-xl font-bold leading-4 text-base lg:leading-5 text-primary">
+                        <div className="absolute w-full h-full p-6 bg-gray-800 bg-opacity-30 ">
+                            <h2 className="text-base font-bold leading-4 lg:text-xl lg:leading-5 text-primary">
                                 {slide.venue}
                             </h2>
-                            <h4 className="lg:text-lg leading-4 text-base lg:leading-5 ">
+                            <h4 className="text-base leading-4 lg:text-lg lg:leading-5 ">
                                 <span className="font-semibold">{slide.date} </span>
                                 <span className="text-white">{slide.time}</span>
                             </h4>
-                            <div className="flex h-full items-end pb-6">
-                                <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 ">
+                            <div className="flex items-end h-full pb-6">
+                                <h3 className="text-xl font-semibold leading-5 lg:text-2xl lg:leading-6 ">
                                     {slide.event}{" "}
                                 </h3>
                             </div>
@@ -50,23 +50,38 @@ export default class AllEvents extends Component {
             );
         });
         this.setState({ slides: slidesHtml });
-    }
+    }*/
     render() {
         return (
             <div>
                 <Navbar />
-                <div className="w-full relative flex items-center justify-center">
-                    <div className="w-full h-full mx-auto mt-[15vh]">
-
-                        <div
-                            id="slider"
-                            className="flex lg:gap-8 md:gap-6 gap-14 items-center justify-center flex-wrap"
-                        >
-                            {this.state.slides}
-                        </div>
-
-                    </div>
-                </div>
+                <section className="py-6 text-gray-50">
+	<div className="container grid grid-cols-2 gap-4 p-4 mx-auto mt-16 md:grid-cols-4">
+    <img src="https://wallpaperaccess.com/full/2592104.jpg" alt="" className="w-full h-full col-span-2 row-span-2 bg-gray-500 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 aspect-square" />
+		<img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />
+		<img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />        
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />       
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img src="https://wallpaperaccess.com/full/2592104.jpg" alt="" className="w-full h-full col-span-2 row-span-2 bg-gray-500 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 aspect-square" />
+	</div>
+    <div className="container grid grid-cols-2 gap-4 p-4 md:grid-cols-4">
+		<img src="https://wallpaperaccess.com/full/2592104.jpg" alt="" className="w-full h-full col-span-2 row-span-2 bg-gray-500 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 aspect-square"/>
+		<img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />
+		<img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />        
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />       
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img alt="" className="w-full h-full bg-gray-500 rounded shadow-sm min-h-48 aspect-square" src="https://images.hdqwalls.com/download/ghost-rider-artwork-hd-kv-1920x1080.jpg" />		
+        <img src="https://wallpaperaccess.com/full/2592104.jpg" alt="" className="w-full h-full col-span-2 row-span-2 bg-gray-500 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 aspect-square" />
+        
+	</div>
+</section>
             </div>
         )
     }
