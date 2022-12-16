@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import videoplayback from "../assests/Golden Stars.mp4"
 import { useParams } from "react-router-dom";
 function withParams(Component) {
   return (props) => <Component {...props} params={useParams()} />;
@@ -88,7 +88,18 @@ export class EventDetails extends Component {
 
   render() {
     return (
-      <div className="hero min-h-screen bg-base-200 flex">
+      <div>
+        <video
+           width={window.innerWidth}
+            className="right-0 bottom-0 top-0 min-h-[100%] min-w-[100%] absolute -z-20"
+            loop
+            autoPlay
+            muted
+        >
+          <source src={videoplayback} type="video/mp4" />
+        </video>
+
+      <div className="hero min-h-screen   flex">
         <div className="h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 flex m-4 md:p-3 md:mx-16 md:my-4">
           <div className="hero-content flex flex-col justify-center md:flex-row">
             <img
@@ -109,6 +120,8 @@ export class EventDetails extends Component {
             </div>
           </div>
         </div>
+      </div>
+
       </div>
     );
   }
