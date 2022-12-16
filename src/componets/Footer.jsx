@@ -6,11 +6,11 @@ class Footer extends Component {
       <>
 
 
-<div className="flex flex-row w-full lg:flex-row   ">
+<div className="flex flex-row w-full lg:flex-row m-5   ">
           <iframe
           title="Ashwamedha 22"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.0305853969758!2d76.4282693141676!3d10.178169272735238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1671036443844!5m2!1sen!2sin"
-          className=" grid flex-grow h-50 card bg-base-300 rounded-box place-items-center "
+          className=" grid flex-grow h-50   bg-base-300 rounded-box place-items-center "
           height={300}
           style={{ border: 0 }}
           allowFullScreen=""
@@ -19,7 +19,12 @@ class Footer extends Component {
         />
         <div className=" divider lg:divider-horizontal " ></div>
 
-            <div   className="grid flex-grow h-300 card bg-base-300 rounded-box place-items-center"  >
+            <div   className="grid flex-grow h-50   bg-base-300 rounded-box place-items-center"  
+             height={300}
+             style={{ border: 0 }}
+             allowFullScreen=""
+             loading="lazy"
+             referrerPolicy="no-referrer-when-downgrade">
               Adi Shankara Institute Of Engineering and Technology
                
             </div>
