@@ -1,11 +1,30 @@
+.work{
+  display: none;  
 
-.notdisplayed {
-    display: none;
   }
-  
-  .displayed {
-    display: flex;
-    height: 20px;
-    margin: auto;
-  }
-  
+
+  @media only screen and (max-width: 480px) {
+    .align{
+      height: 6vh;
+      width: 40vw;
+      justify-content: center;
+      margin-top: 6em;
+      margin-left: 2.5em;
+}}
+
+/* @media only screen and (max-width: 768px)  {
+    .align{
+      height: 6vh;
+      width: 40vw;
+      justify-content: center;
+      margin-top: 10em;
+      margin-left: 4em;
+    }
+
+} */
+
+
+
+.main:hover .work{
+  display: inline;
+}

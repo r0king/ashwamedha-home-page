@@ -46,7 +46,7 @@ export default class Navbar extends Component {
     const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
     return (
       <div>
-        <nav className="bg-transparent rounded fixed z-20 w-screen mb-3 border-neutral-content border-b-2" style={{opacity}}>
+        <nav className="bg-transparent rounded fixed z-20 w-screen mb-3 border-neutral-content border-b-2 flex-shrink" style={{opacity}}>
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <a href="#home" className="flex items-center">
               <img src={Logo2} className="invert ml-2 px-2 py-2 h-[5vh] sm:h-[10vh]" alt="Logo" />
