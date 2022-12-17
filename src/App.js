@@ -5,6 +5,7 @@ import AllEvents from "./componets/AllEvents";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import EventDetails from "./componets/EventDetails";
 import HomePage from "./componets/HomePage";
+import EventCarousel from "./componets/EventCarousel";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route exact path="/:name/" element={<EventDetails />} />
         <Route path="/events" element={<AllEvents/>}/>
+        <Route path="/test" element={<EventCarousel/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -70,7 +70,7 @@ export default class Hero extends Component {
             </div>
           </section>
         </div>
-        <Intro />
+        {/* <Intro /> */}
       </>
     );
   }
