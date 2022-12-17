@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ashwamedha-home-page/static/css/main.33973035.css",
-    "main.js": "/ashwamedha-home-page/static/js/main.bbd59cfc.js",
+    "main.css": "/ashwamedha-home-page/static/css/main.208f4fa9.css",
+    "main.js": "/ashwamedha-home-page/static/js/main.59882a49.js",
     "static/js/787.ee564383.chunk.js": "/ashwamedha-home-page/static/js/787.ee564383.chunk.js",
     "static/media/Golden Stars.mp4": "/ashwamedha-home-page/static/media/Golden Stars.1bdea5b886354d243cd3.mp4",
     "static/media/bgvideo.webm": "/ashwamedha-home-page/static/media/bgvideo.f590ae37189f15a625ba.webm",
@@ -9,12 +9,12 @@
     "static/media/logo_crop.png": "/ashwamedha-home-page/static/media/logo_crop.6d78a30974cb308f08af.png",
     "index.html": "/ashwamedha-home-page/index.html",
     "static/media/index.cjs": "/ashwamedha-home-page/static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.33973035.css.map": "/ashwamedha-home-page/static/css/main.33973035.css.map",
-    "main.bbd59cfc.js.map": "/ashwamedha-home-page/static/js/main.bbd59cfc.js.map",
+    "main.208f4fa9.css.map": "/ashwamedha-home-page/static/css/main.208f4fa9.css.map",
+    "main.59882a49.js.map": "/ashwamedha-home-page/static/js/main.59882a49.js.map",
     "787.ee564383.chunk.js.map": "/ashwamedha-home-page/static/js/787.ee564383.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33973035.css",
-    "static/js/main.bbd59cfc.js"
+    "static/css/main.208f4fa9.css",
+    "static/js/main.59882a49.js"
   ]
 }
