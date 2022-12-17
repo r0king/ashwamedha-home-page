@@ -1,3 +1,4 @@
+import autoprefixer from "autoprefixer";
 import React, { Component } from "react";
 class Footer extends Component {
   state = {};
@@ -11,8 +12,9 @@ class Footer extends Component {
           <iframe
           title="Ashwamedha 22"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.0305853969758!2d76.4282693141676!3d10.178169272735238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1671036443844!5m2!1sen!2sin"
-          className=" flex flex-grow bg-base-300 place-items-center "
-          height={400}
+          className=" flex flex-grow  bg-base-300 place-items-center "
+          height={300}
+          
           
           
           style={{ border: 0 }}
@@ -22,32 +24,40 @@ class Footer extends Component {
         />
         <div className=" divider lg:divider-horizontal " ></div>
 
-            <div   className="grid grid-flow-dense 
-            bg-base-300 place-items-center"  
-             height={400}
-             style={{ border: 0 }}
-             allowFullScreen=""
-             loading="lazy"
-             referrerPolicy="no-referrer-when-downgrade">
+        <div
+          
+          
+          className=" flex flex-col justify-center w-80 bg-base-300 place-items-center "
+          width={300}
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade">
               <div className=" p-10">
-                  <div className="col-md-12 col-sm-12 col-xs-12 ">
-                    <label className="text-5xl">
+             <div className="col-md-12 col-sm-12 col-xs-12 ">
+              <label className="text-xl">
                   <b>VENUE</b>
                   
-                </label>
-                <div className="col-md-12 col-sm-12 col-xs-12 overflow-y-auto ">
-                  <label className=" text-2xl ">
-                    Adi Shankara Institute of Engineering and Technology,
-                 Mattoor, Ernakulam, Kerala, India</label>
-                   
-                 </div>
-               </div>
-                </div>
+              </label>
+               <div className="col-md-12 col-sm-12 col-xs-12 ">
+              <label className="text-lg">
+              Adi Shankara Institute of Engineering and Technology,
+                 Mattoor, Ernakulam, Kerala, India
+              </label>
 
-              <div className=" divider md:divider-vertical" ></div>
-              
-              <footer className=" flex justify-center p-3 rounded text-base-content">
-              <div>
+
+               </div>
+             </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div className=" divider lg:divider-vertical " ></div>
+        
+        <footer className="p-10 rounded footer footer-center text-base-content">
+
+        <div>
             <div className="grid grid-flow-col gap-4">
               <a href="https://www.tweeter.com">
                 <svg
@@ -84,8 +94,7 @@ class Footer extends Component {
               </a>
             </div>
           </div>
-          </footer>
-
+          
           <div className="grid grid-flow-col gap-4">
             <a href="#About" className="link link-hover">
               About us
@@ -100,33 +109,8 @@ class Footer extends Component {
               Press kit
             </a>
           </div>
-               
-            </div>
 
-        </div>
-
-        <div className=" divider lg:divider-vertical " ></div>
-        
-        <footer className="p-10 rounded footer footer-center text-base-content">
-          <div className="grid grid-flow-col gap-4">
-            <a href="#About" className="link link-hover">
-              About us
-            </a>
-            <a href="#Contact" className="link link-hover">
-              Contact
-            </a>
-            <a href="#Jobs" className="link link-hover">
-              Jobs
-            </a>
-            <a href="#Press" className="link link-hover">
-              Press kit
-            </a>
-          </div>
-         
-
-          <div>
-           
-          </div>
+          
           <div>
             <p>Copyright © 2022 - All right reserved by Ashwamedha 22</p>
           </div>
