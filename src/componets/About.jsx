@@ -3,7 +3,7 @@ import { useTransition, animated } from "@react-spring/web";
 import aboutImg from "../assests/about.jpg";
 import handleViewport from "react-in-viewport";
 
-const AboutBlock = (props: { inViewport: boolean }) => {
+const AboutBlock = (props: inViewport) => {
   const { inViewport, forwardedRef } = props;
   const [isVisible, setVisible] = useState(false);
   const transition = useTransition(isVisible, {
