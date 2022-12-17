@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import "F:/Ashwamedha/ashwamedha-home-page/src/App.css"
 import eventData from '../assests/events.json'
 
 export default class AllEvents extends Component {
