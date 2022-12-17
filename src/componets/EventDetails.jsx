@@ -9,8 +9,7 @@ function withParams(Component) {
 export class EventDetails extends Component {
   constructor(props) {
     super(props);
-    this.events = eventData
-    this.event = this.events[this.props.params.name];
+    this.event = eventData[this.props.params.name];
   }
   componentDidMount() { }
 
@@ -40,9 +39,7 @@ export class EventDetails extends Component {
               <h1 className="text-1xl font-bold text-primary-focus">{this.event.date} | {this.event.time}</h1>
               <h1 className="text-1xl font-bold text-neutral-content">{this.event.venue} </h1>
               <div className="h-[60vh] overflow-y-auto overflow-x-hidden">
-                <p className="py-6" dangerouslySetInnerHTML={{__html:this.event.content}}> 
-                  
-                </p>
+                <p className="py-6" dangerouslySetInnerHTML={{__html:this.event.content}}/> 
               </div>
               <button className="btn btn-outline mt-4 text-neutral-content ">Register</button>
             </div>

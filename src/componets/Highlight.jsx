@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-class Highlight extends Component {
+import React, { Component, useState } from "react";
+import { useTransition, animated } from "@react-spring/web";
+import handleViewport from "react-in-viewport";
+class HighlightBlock extends Component {
 	render() {
 		return (
 			<div>
@@ -13,7 +15,7 @@ class Highlight extends Component {
 							<span className="inline-block w-1 h-1 bg-neutral-content rounded-full" />
 						</div>
 						<div className="container mx-auto space-y-24">
-							<div className="flex flex-col overflow-hidden  lg:flex-row">
+							<div className="flex flex-col   lg:flex-row">
 								<img src="https://source.unsplash.com/640x480/?1" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
@@ -22,7 +24,7 @@ class Highlight extends Component {
 									<button type="button" className="self-start text-neutral-content">Action</button>
 								</div>
 							</div>
-							<div className="flex flex-col overflow-hidden lg:flex-row-reverse">
+							<div className="flex flex-col  lg:flex-row-reverse">
 								<img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
@@ -31,7 +33,7 @@ class Highlight extends Component {
 									<button type="button" className="self-start text-neutral-content">Action</button>
 								</div>
 							</div>
-							<div className="flex flex-col overflow-hidden lg:flex-row">
+							<div className="flex flex-col lg:flex-row">
 								<img src="https://source.unsplash.com/640x480/?3" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
@@ -46,5 +48,45 @@ class Highlight extends Component {
 		);
 	}
 }
+const AboutBlock = (props: { inViewport: boolean }) => {
+  const { inViewport, forwardedRef } = props;
+  const [isVisible, setVisible] = useState(false);
+  const transition = useTransition(isVisible, {
+    from: { x: -300, opacity: 0 },
+    enter: { x: 0, opacity: 1 },
+    delay: 300,
+    leave: { x: -300, opacity: 0 },
+    config: { duration: 300 },
+  });
+  if (inViewport && !isVisible) {
+    setVisible(true);
+  } 
+
+  return (
+    <div ref={forwardedRef}>
+      {transition((style, item) =>
+        item ? (
+          <animated.div
+            className=" w-full"
+            style={style}
+          >
+            <HighlightBlock />
+          </animated.div>
+        ) : (
+          <div className=""></div>
+        )
+      )}
+    </div>
+  );
+};
+const ViewportBlock = handleViewport(AboutBlock /* options: {}, config: {} */);
+
+const Highlight = (props) => {
+  return (
+    <div className="min-h-[50vh]">
+      <ViewportBlock />
+    </div>
+  );
+};
 
 export default Highlight;
