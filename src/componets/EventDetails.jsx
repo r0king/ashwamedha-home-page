@@ -15,7 +15,7 @@ export class EventDetails extends Component {
 
   render() {
     return (
-      <div className="h-screen">
+      <div className="md:h-screen">
         <video
            width={window.innerWidth}
             className="max-h-screen w-screen object-cover right-0 bottom-0 top-0 min-h-[100%] bg-base-300 min-w-[100%] absolute -z-20"
@@ -26,7 +26,7 @@ export class EventDetails extends Component {
           <source src={videoplayback} type="video/mp4" />
         </video>
 
-      <div className="hero h-screen py-[2vh] flex">
+      <div className="hero md:h-screen py-[2vh] flex">
         <div className="h-full w-full justify-center flex m-4 md:p-3 md:mx-16 md:my-4">
           <div className="hero-content flex flex-col justify-center md:flex-row border-gray-100 border rounded-md backdrop-blur-3xl bg-gray-300  bg-clip-padding backdrop-filter  bg-opacity-10">
             <img
