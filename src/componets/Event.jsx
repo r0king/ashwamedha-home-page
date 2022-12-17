@@ -20,8 +20,8 @@ export default class Event extends React.Component {
     let slidesHtml = [];
     slides.forEach((slide) => {
       slidesHtml.push(
-        <Slide index={this.state.slides.length}>
-          <div className="flex flex-shrink-0 relative w-full sm:w-auto  min-h-[450px]">
+        <Slide index={this.state.slides.length} >
+          <div className="flex flex-shrink-0 relative w-full sm:w-auto  min-h-[450px]" key={slide.id}>
             <img
               src="https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg"
               alt="black chair and white table"
