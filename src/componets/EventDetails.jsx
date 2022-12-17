@@ -9,8 +9,7 @@ function withParams(Component) {
 export class EventDetails extends Component {
   constructor(props) {
     super(props);
-    this.events = eventData
-    this.event = this.events[this.props.params.name];
+    this.event = eventData[this.props.params.name];
   }
   componentDidMount() { }
 

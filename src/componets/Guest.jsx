@@ -1,6 +1,8 @@
-import React, { Component } from "react";
+import React, { Component,  useState } from "react";
+import { useTransition, animated } from "@react-spring/web";
+import handleViewport from "react-in-viewport";
 
-class Guest extends Component {
+class GuestBlock extends Component {
   render() {
     return (
       <div>
@@ -32,9 +34,7 @@ class Guest extends Component {
               <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
                 arthur melo
               </h1>
-              <p className="mt-2  capitalize ">
-                Mentalist
-              </p>
+              <p className="mt-2  capitalize ">Mentalist</p>
               <div className="flex mt-3 -mx-2 pb-4">
                 <a
                   href="https://www.Reddit.com"
@@ -93,4 +93,43 @@ class Guest extends Component {
   }
 }
 
+const WrapperBlock = (props: { inViewport: boolean }) => {
+  const { inViewport, forwardedRef } = props;
+  const [isVisible, setVisible] = useState(false);
+  const transition = useTransition(isVisible, {
+    from: { x: -300, opacity: 0 },
+    enter: { x: 0, opacity: 1 },
+    delay: 300,
+    leave: { x: -300, opacity: 0 },
+    config: { duration: 300 },
+  });
+  if (inViewport && !isVisible) {
+    setVisible(true);
+  }
+
+  return (
+    <div ref={forwardedRef}>
+      {transition((style, item) =>
+        item ? (
+          <animated.div className=" w-full" style={style}>
+            <GuestBlock />
+          </animated.div>
+        ) : (
+          <div className=""></div>
+        )
+      )}
+    </div>
+  );
+};
+const ViewportBlock = handleViewport(
+  WrapperBlock /* options: {}, config: {} */
+);
+
+const Guest = (props) => {
+  return (
+    <div className="min-h-[50vh]">
+      <ViewportBlock />
+    </div>
+  );
+};
 export default Guest;

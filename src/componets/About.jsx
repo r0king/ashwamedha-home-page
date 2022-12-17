@@ -1,5 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
-import Logo2 from "../assests/logo_crop.png";
+import React, {  useState } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import aboutImg from "../assests/about.jpg";
 import handleViewport from "react-in-viewport";
@@ -11,7 +10,6 @@ const AboutBlock = (props: { inViewport: boolean }) => {
     from: { x: -300, opacity: 0 },
     enter: { x: 0, opacity: 1 },
     delay: 300,
-    leave: { x: -300, opacity: 0 },
     config: { duration: 300 },
   });
   if (inViewport && !isVisible) {
