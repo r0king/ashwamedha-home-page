@@ -1,7 +1,7 @@
 //react
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 //react dom
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const useTilt = () => {
   const ref = useRef(null);
@@ -39,32 +39,39 @@ const useTilt = () => {
       const px = (state.mouseX - state.rect.left) / state.rect.width;
       const py = (state.mouseY - state.rect.top) / state.rect.height;
 
-      el.style.setProperty('--px', px);
-      el.style.setProperty('--py', py);
+      el.style.setProperty("--px", px);
+      el.style.setProperty("--py", py);
     };
 
     const handleMouseLeave = () => {
-      el.style.setProperty('--px', 0.5);
-      el.style.setProperty('--py', 0.5);
+      el.style.setProperty("--px", 0.5);
+      el.style.setProperty("--py", 0.5);
     };
 
-    el.addEventListener('mousemove', handleMouseMove);
-    el.addEventListener('mouseleave', handleMouseLeave);
-    el.addEventListener('touchmove', handleMouseMove);
-    el.addEventListener('touchend', handleMouseLeave);
+    el.addEventListener("mousemove", handleMouseMove);
+    el.addEventListener("mouseleave", handleMouseLeave);
+    el.addEventListener("touchmove", handleMouseMove);
+    el.addEventListener("touchend", handleMouseLeave);
 
     return () => {
-      el.removeEventListener('mousemove', handleMouseMove);
-      el.removeEventListener('mouseleave', handleMouseLeave);
-      el.removeEventListener('touchmove', handleMouseMove);
-      el.removeEventListener('touchend', handleMouseLeave);
+      el.removeEventListener("mousemove", handleMouseMove);
+      el.removeEventListener("mouseleave", handleMouseLeave);
+      el.removeEventListener("touchmove", handleMouseMove);
+      el.removeEventListener("touchend", handleMouseLeave);
     };
   }, []);
 
   return ref;
 };
 
-const Slide = ({ image, title, subtitle, description, offset, isPageBackground }) => {
+const Slide = ({
+  image,
+  title,
+  subtitle,
+  description,
+  offset,
+  isPageBackground,
+}) => {
   const active = offset === 0 ? true : null,
     ref = useTilt(active);
 
@@ -74,8 +81,8 @@ const Slide = ({ image, title, subtitle, description, offset, isPageBackground }
       className="slide"
       data-active={active}
       style={{
-        '--offset': offset,
-        '--dir': offset === 0 ? 0 : offset > 0 ? 1 : -1,
+        "--offset": offset,
+        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
       }}
     >
       {isPageBackground && (
@@ -135,7 +142,7 @@ const Carousel = ({ slides, isPageBackground }) => {
   };
 
   return (
-    <section className="slidesWrapper">
+    <section className="slidesWrapper ">
       <div className="slides">
         <button className="prevSlideBtn" onClick={handlePrevSlide}>
           <i className="fas fa-chevron-left" />
@@ -144,9 +151,14 @@ const Carousel = ({ slides, isPageBackground }) => {
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (slideIndex - i);
 
-          if (typeof slide === 'string') {
+          if (typeof slide === "string") {
             return (
-              <Slide image={slide} offset={offset} isPageBackground={isPageBackground} key={i} />
+              <Slide
+                image={slide}
+                offset={offset}
+                isPageBackground={isPageBackground}
+                key={i}
+              />
             );
           } else {
             return (
@@ -178,28 +190,34 @@ Carousel.propTypes = {
 const slides = [
   {
     id: 1,
-    title: 'First',
-    subtitle: 'slide',
-    description: 'Praesent ac sem eget est.',
-    image: 'https://picsum.photos/id/1/500/500',
+    title: "First",
+    subtitle: "slide",
+    description: "Praesent ac sem eget est.",
+    image: "https://picsum.photos/id/1/500/500",
   },
   {
     id: 2,
-    title: 'Second',
-    subtitle: 'slide',
-    description: 'Praesent ac sem eget est.',
-    image: 'https://picsum.photos/id/234/500/500',
+    title: "Second",
+    subtitle: "slide",
+    description: "Praesent ac sem eget est.",
+    image: "https://picsum.photos/id/234/500/500",
   },
   {
     id: 3,
-    title: 'Third',
-    subtitle: 'slide',
-    description: 'Praesent ac sem eget est.',
-    image: 'https://picsum.photos/id/790/500/500',
+    title: "Third",
+    subtitle: "slide",
+    description: "Praesent ac sem eget est.",
+    image: "https://picsum.photos/id/790/500/500",
+  },
+  {
+    id: 3,
+    title: "Third",
+    subtitle: "slide",
+    description: "Praesent ac sem eget est.",
+    image: "https://picsum.photos/id/790/500/500",
   },
 ];
 
 const EventCarousel = () => <Carousel slides={slides} isPageBackground />;
 
 export default EventCarousel;
-
