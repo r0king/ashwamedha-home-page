@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 import Navbar from "./Navbar";
-import Logo from "../assests/logo.svg";
+import Logo from "../assests/logo_crop.png";
 export default class Hero extends Component {
   constructor(props) {
     super();
@@ -11,7 +11,7 @@ export default class Hero extends Component {
       <>
         <Navbar />
           <video
-            className="object-cover right-0 bottom-0 top-0 absolute -z-20"
+            className="absolute top-0 bottom-0 right-0 object-cover -z-20"
             loop
             autoPlay
             muted
@@ -23,14 +23,15 @@ export default class Hero extends Component {
             width={window.innerWidth}
             className="h-[80vh]  z-10 lg:h-[100vh]"
           >
-            <div className="flex justify-between flex-col md:flex-row">
+            <div className="flex flex-row justify-between opacity-60 md:flex-row">
               <img
                 src={Logo}
                 alt=""
-                className="invert w-1/2 pt-[20vh] pl-[5vw] lg:w-1/3"
+                className="invert w-1/2 pt-[20vh] pl-[5vw] lg:w-1/3 sm:w-1/5 h-1/3"
               />
-              <div className="flex flex-col justify-center">asdfasdfasdf</div>
-            </div>
+              <h1 className="font-mono font-semibold text-7xl mx-[15vh] my-[35vh]">ASHWAMEDHA '22</h1>
+              
+              </div>
           </div>
         </div>
       </>
