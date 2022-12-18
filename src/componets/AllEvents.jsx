@@ -19,7 +19,7 @@ export default class AllEvents extends Component {
                 <div index={this.state.slides.length}>
                     <div className="main flex flex-shrink relative sm:w-auto lg:max-w-[15vw] max-w-[75vw] sm:max-w-[20vw] max-h-[450px] transition duration-500 hover:scale-110 ">
                         <img
-                            src="https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg"
+                            src={slide.src}
                             alt="black chair and white table"
                             className="object-cover object-center w-full  "
                         />

@@ -101,17 +101,17 @@ const Slide = ({
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="slideTitle text-6xl lg:text-8xl text-neutral-content" dir="auto">
+            <h2 className="slideTitle text-5xl lg:text-6xl text-neutral-content" dir="auto">
               {title}
             </h2>
           )}
           {subtitle && (
-            <h3 className="slideSubtitle text-6xl lg:text-8xl before:text-neutral-content" dir="auto">
+            <h3 className="slideSubtitle text-5xl lg:text-6xl before:text-neutral-content" dir="auto">
               {subtitle}
             </h3>
           )}
           {description && (
-            <p className="slideDescription text-xl lg:text-3xl" dir="auto">
+            <p className="slideDescription text-xl lg:text-2xl" dir="auto">
               {description}
             </p>
           )}

@@ -11,8 +11,8 @@ export default class HomePage extends Component {
     return (
       <div>
         <Hero />
-        <EventCarousel />
         <About/>
+        <EventCarousel />
         <Guest />
         <Highlight />
         <Footer />
