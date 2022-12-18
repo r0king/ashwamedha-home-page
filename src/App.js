@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route exact path="/:name/" element={<EventDetails />} />
         <Route path="/events" element={<AllEvents/>}/>
-        <Route path="/test" element={<EventCarousel/>}/>
+        <Route path="" element={<EventCarousel/>}/>
         <Route path="/about" element={<About/>}/>
       </Routes>
     </BrowserRouter>
