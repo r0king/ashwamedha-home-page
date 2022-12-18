@@ -80,7 +80,7 @@ const ViewportBlock = handleViewport(
 
 const Guest = (props) => {
   return (
-    <div className="min-h-[50vh]">
+    <div className="min-h-[50vh]" id="guest">
       <ViewportBlock />
     </div>
   );
