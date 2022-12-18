@@ -1,15 +1,16 @@
 import React, { Component,  useState } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import handleViewport from "react-in-viewport";
+import guestImg from "../assests/Guest.jpg";
 
 class GuestBlock extends Component {
   render() {
     return (
-      <div>
-        <section id="guest">
+      <div >
+        <section >
           <div className="h-[32rem] ">
             <div className="container px-6 py-10 mx-auto">
-              <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+              <h1 id="guest" className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
                 The Guest
               </h1>
               <div className="flex justify-center mx-auto mt-6">
@@ -28,7 +29,7 @@ class GuestBlock extends Component {
             <div className="mt-[4vh]  h-[60vh] w-[40vh] flex  flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700 ">
               <img
                 className="object-cover h-[54vh] w-[40vh] rounded-xl aspect-square"
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                src={guestImg}
                 alt=""
               />
               <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">

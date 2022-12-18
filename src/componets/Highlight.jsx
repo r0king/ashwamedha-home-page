@@ -4,9 +4,9 @@ import handleViewport from "react-in-viewport";
 class HighlightBlock extends Component {
 	render() {
 		return (
-			<div>
-				<section id="highlight" className="p-4 lg:p-8 dark:text-gray-100">
-						<h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+			<div >
+				<section  className="p-4 lg:p-8 dark:text-gray-100">
+						<h1 id="highlight" className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
 							Highlights
 						</h1>
 						<div className="flex justify-center mx-auto mt-6 mb-10">

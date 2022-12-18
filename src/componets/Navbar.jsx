@@ -94,16 +94,16 @@ export default class Navbar extends Component {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/ashwamedha-home-page/about"
+                  <AnchorLink
+                    href='#about'
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     About
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li>
                   <AnchorLink
-                    href="#event"
+                    href='#event'
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Events
@@ -111,7 +111,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <AnchorLink
-                    href="#guest"
+                    href='#guest'
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Guests
@@ -119,7 +119,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <AnchorLink
-                    href="#highlight"
+                    href='#highlight'
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Highlights
@@ -127,7 +127,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <AnchorLink
-                    href="#contact"
+                    href='#contact'
                     className="block py-2 pl-3 pr-4 rounded mr-7 text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Contact
