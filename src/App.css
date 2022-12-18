@@ -1,121 +1,108 @@
-.work{
-  display: none;  
+.work {
+  display: none;
+
+}
+
+/* Media Queries - Start */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .vid {
+    height: 100vw;
+    width: 100%;
 
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .vid{
-      height: 100vw;
-      width: 100%;
-  
-     } 
-  
-     .mbox{
-      margin-top: 15vw;
-      padding-right: 2vw;
-     }
-  
-     .one{
-      font-size: 3rem;
-      
-     }
-  
-  
-     .text1{
-      font-size: 1rem;
-     }
-  
-     .text2{
-      font-size: 0.8rem;
-     }
-  
-  
-  
-    }
+  .text1 {
+    font-size: 1rem;
+  }
 
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
-    .align{
-      height: 6vh;
-      width: 40vw;
-      justify-content: center;
-      margin-top: 6em;
-      margin-left: 2.5em;
-      }
-
-     .vid{
-      height: 100vh;
-      width: 100vw;
-
-     } 
-
-     .one{
-      font-size: 5rem;
-      padding-top: 5vw;
-      
-     }
-
-     
-     .mbox{
-      margin-top: 15vw;
-      padding-right:10vw;
-     }
-
-     .text1{
-      font-size: 2rem;
-     }
-  
-     .text2{
-      font-size: 1rem;
-     }
-  
-  
-
-    .evr{
-      padding-bottom: 70px;
-    }
+  .mbox{
+    padding-top: 25vw;
+  }
 
 
+  .text2 {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .align {
+    height: 6vh;
+    width: 40vw;
+    justify-content: center;
+    margin-top: 6em;
+    margin-left: 2.5em;
+  }
+
+  .vid {
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+  .mbox{
+    padding-top: 25vw;
+  }
+
+  .text1 {
+    font-size: 2rem;
+  }
+
+  .text2 {
+    font-size: 1rem;
+  }
 
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* .align{
-      height: 6vh;
-      width: 40vw;
-      justify-content: center;
-      margin-top: 10em;
-      margin-left: 4em;
-    } */
+  .vid {
+    height: 100vh;
+    width: 100%;
 
-    .vid{
-      height: 100vh;
-      width: 100%;
-  
-     } 
-  
-     .one{
-      font-size: 9rem;
-      padding-top: 5vw;
-     }
- 
-  
-     .mbox{
-      margin-top: 80px;
-     }
-
-     .text1{
-      font-size: 2rem;
-     }
-  
-     .text2{
-      font-size: 1rem;
-     }
-  
-    .evr{
-      padding-bottom: 70px;
-    }
   }
+
+
+  .text1 {
+    font-size: 2rem;
+  }
+
+  .text2 {
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1260px) {
+
+  .vid {
+    height: 100vh;
+    width: 100%;
+
+  }
+
+}
+
+@media only screen and (min-width: 1260px) and (max-width: 1536px) {
+
+  .vid {
+    height: 100vh;
+    width: 100%;
+
+  }
+
+  .text1 {
+    font-size: 2.5rem;
+  }
+
+  .text2 {
+    font-size: 1rem;
+  }
+}
+
+/* Media Queries - End */
 
 .notdisplayed {
   display: none;
@@ -152,6 +139,7 @@
   -o-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
+
 .button-style1,
 .button-style2,
 .button-style3,
@@ -214,6 +202,7 @@ textarea.style1 {
   color: inherit;
   width: 100%;
 }
+
 .button-style1 .d:before {
   top: 0;
   left: 45%;
@@ -247,24 +236,7 @@ textarea.style1 {
   right: 0;
   bottom: 10%;
 }
-@media only screen and (min-width: 1024px) and (max-width: 1260px) {
 
-  .vid{
-    height: 100vh;
-    width: 100%;
-
-   } 
-
-   .one{
-    font-size: 12rem;
-    padding-top: 5vw;
-    
-   }
-
-   .mbox{
-    margin-top: 80px ;
-   }
-  }
 
 .button-style1:hover .d:before,
 .button-style1:hover .d:after {
@@ -277,6 +249,7 @@ textarea.style1 {
   top: 0;
   bottom: 0;
 }
+
 .button-style1,
 .button-style2,
 .button-style3,
@@ -314,31 +287,7 @@ textarea.style1 {
   -ms-flex-pack: center;
   justify-content: center;
 }
-@media only screen and (min-width: 1260px) and (max-width: 1536px) {
 
-  .vid{
-    height: 100vh;
-    width: 100%;
-
-   } 
-
-   .one{
-    font-size: 15rem;
-    padding-top: 5vw;
-    
-   }
-
-   
-
-   .text1{
-    font-size: 2.5rem;
-   }
-
-   .text2{
-    font-size: 1rem;
-   }
-  
-}
 
 
 .button-style1 span,
@@ -356,34 +305,27 @@ textarea.style1 {
 
 @media only screen and (min-width: 1536px) and (max-width: 2160px) {
 
-  .vid{
+  .vid {
     height: 100vh;
     width: 100%;
 
-   } 
-
-   .one{
-    font-size: 10rem;
-    padding-top: 5vw;
-    
-   }
-
-   
-
-   .text1{
-    font-size: 3rem;
-   }
-
-   .text2{
-    font-size: 1rem;
-   }
   }
 
-  
+
+  .text1 {
+    font-size: 3rem;
+  }
+
+  .text2 {
+    font-size: 1rem;
+  }
+}
 
 
 
-.main:hover .work{
+
+
+.main:hover .work {
   display: inline;
 }
 
@@ -463,6 +405,7 @@ textarea.style1 {
   font-size: 10px;
   margin-left: 15px;
 }
+
 .button-style1 .d span:before,
 .button-style1 .d span:after {
   content: "";
@@ -471,52 +414,73 @@ textarea.style1 {
   transition: all 500ms ease-in-out;
   background-color: orangered;
 }
+
 .button-style1 .d:before {
   top: 0;
   left: 45%;
   right: 10%;
   background: orangered;
 }
+
 .button-style1 .d:after {
   left: 10%;
   right: 65%;
   bottom: 0;
   background: orangered;
 
-@keyframes glitch-2 {
-  1% {
-    transform: rotateX(10deg) skewX(70deg);
- }
-  2% {
-    transform: rotateX(0deg) skewX(0deg);
- }
-} 
+  @keyframes glitch-2 {
+    1% {
+      transform: rotateX(10deg) skewX(70deg);
+    }
+
+    2% {
+      transform: rotateX(0deg) skewX(0deg);
+    }
+  }
 }
 
 
 
 svg {
-	font-family: 'Russo One', sans-serif;
-	position: relative; 
-	width: 100%; height: 100%;
+  font-family: 'Russo One', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 svg text {
-	text-transform: uppercase;
-	animation: stroke 5s infinite alternate;
-	stroke-width: 2;
-	stroke: #365fa0;
-	font-size: 11rem;
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 11rem;
 }
+
 @keyframes stroke {
-	0%   {
-		fill: rgba(72,138,20,0); stroke: rgb(243, 166, 0);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: rgba(72,138,20,0); stroke: rgb(243, 166, 0); }
-	80%  {fill: rgba(72,138,20,0); stroke: rgb(243, 166, 0); stroke-width: 3; }
-	100% {
-		fill: rgb(243, 166, 0); stroke: rgba(54,95,160,0); 
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(243, 166, 0);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(243, 166, 0);
+  }
+
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(243, 166, 0);
+    stroke-width: 3;
+  }
+
+  100% {
+    fill: rgb(243, 166, 0);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
