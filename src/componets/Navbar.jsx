@@ -101,7 +101,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <AnchorLink
-                    href='#event'
+                    href="/ashwamedha-home-page/events"
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Events
