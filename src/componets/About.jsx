@@ -19,8 +19,8 @@ const AboutBlock = (props: inViewport) => {
   }
 
   return (
-    <div ref={forwardedRef}>
-
+    <div ref={forwardedRef} id="about">
+      
       {transition((style, item) =>
         item ? (
           <animated.div

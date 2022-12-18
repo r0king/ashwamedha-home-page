@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import a from "react-anchor-link-smooth-scroll";
 import Logo2 from "../assests/logo_crop.png";
 
 export default class Navbar extends Component {
@@ -8,19 +8,17 @@ export default class Navbar extends Component {
     this.state = {
       toggle: true,
       currentScrollHeight: 0,
-      opacity: 0
+      opacity: 0,
     };
     this.navItems = React.createRef();
   }
-  componentDidMount(){
+  componentDidMount() {
     window.onscroll = () => {
-      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
-      if (this.state.currentScrollHeight !== newScrollHeight){
-        this.setState({currentScrollHeight: newScrollHeight})
-    }
-
-    }
-
+      const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+      if (this.state.currentScrollHeight !== newScrollHeight) {
+        this.setState({ currentScrollHeight: newScrollHeight });
+      }
+    };
   }
   handleNavclick = async (e) => {
     if (this.state.toggle) {
@@ -44,14 +42,24 @@ export default class Navbar extends Component {
     });
   };
   render() {
-    const opacity = Math.min(100 / this.state.currentScrollHeight*2  , 1)
-    console.log(opacity)
+    const opacity = Math.min((100 / this.state.currentScrollHeight) * 2, 1);
+    console.log(opacity);
     return (
       <div>
-        <nav className="fixed z-20 flex-shrink w-screen mb-3 bg-transparent border-b-2 rounded border-neutral-content" style={{opacity}}>
-          <div className="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="#home" className="flex items-center">
-              <img src={Logo2} className="invert ml-2 px-2 py-2 h-[5vh] sm:h-[10vh]" alt="Logo" />
+        <nav
+          className="fixed z-20 flex-shrink w-screen mb-3 bg-transparent border-b-2 rounded border-neutral-content"
+          style={{ opacity }}
+        >
+          <div className="flex flex-wrap items-center justify-between mx-auto">
+            <a
+              href={process.env.PUBLIC_URL + "/"}
+              className="flex items-center"
+            >
+              <img
+                src={Logo2}
+                className="invert ml-2 px-2 py-2 h-[5vh] sm:h-[10vh]"
+                alt="Logo"
+              />
             </a>
             <button
               data-collapse-toggle="navbar-default"
@@ -84,52 +92,52 @@ export default class Navbar extends Component {
               <ul className="flex flex-col px-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
                 <li>
                   <a
-                    href="/ashwamedha-home-page/"
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    href={process.env.PUBLIC_URL + "/#home"}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                     aria-current="page"
                   >
                     Home
                   </a>
                 </li>
                 <li>
-                  <AnchorLink
-                    href='#about'
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  <a
+                    href={process.env.PUBLIC_URL + "/#about"}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     About
-                  </AnchorLink>
+                  </a>
                 </li>
                 <li>
-                  <AnchorLink
-                    href="/ashwamedha-home-page/events"
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  <a
+                    href={process.env.PUBLIC_URL + "/events"}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Events
-                  </AnchorLink>
+                  </a>
                 </li>
                 <li>
-                  <AnchorLink
-                    href='#guest'
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  <a
+                    href="#guest"
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Guests
-                  </AnchorLink>
+                  </a>
                 </li>
                 <li>
-                  <AnchorLink
-                    href='#highlight'
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  <a
+                    href={process.env.PUBLIC_URL + "/#highlights"}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Highlights
-                  </AnchorLink>
+                  </a>
                 </li>
                 <li>
-                  <AnchorLink
-                    href='#contact'
-                    className="block py-2 pl-3 pr-4 rounded mr-7 text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                  <a
+                    href={process.env.PUBLIC_URL + "/#contact"}
+                    className="ock pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Contact
-                  </AnchorLink>
+                  </a>
                 </li>
               </ul>
             </div>
