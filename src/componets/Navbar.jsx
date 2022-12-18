@@ -50,7 +50,7 @@ export default class Navbar extends Component {
           className="fixed z-20 flex-shrink w-screen mb-3 bg-transparent border-b-2 rounded border-neutral-content"
           style={{ opacity }}
         >
-          <div className="flex flex-wrap items-center justify-between mx-auto">
+          <div className="flex flex-wrap items-center justify-between mx-auto mr-8 navi">
             <a
               href={process.env.PUBLIC_URL + "/"}
               className="flex items-center"
@@ -134,7 +134,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href={process.env.PUBLIC_URL + "/#contact"}
-                    className="ock pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
+                    className="block pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Contact
                   </a>
