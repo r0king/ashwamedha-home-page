@@ -1,4 +1,3 @@
-import autoprefixer from "autoprefixer";
 import React, { Component } from "react";
 class Footer extends Component {
   state = {};

@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
-
+import logoImg from "../assests/logo_crop.png";
 const useTilt = () => {
   const ref = useRef(null);
 
@@ -78,7 +78,7 @@ const Slide = ({
   return (
     <div
       ref={ref}
-      className="slide"
+      className="w-[90vw] slide lg:w-[50vw]"
       data-active={active}
       style={{
         "--offset": offset,
@@ -87,31 +87,31 @@ const Slide = ({
     >
       {isPageBackground && (
         <div
-          className="slideBackground"
+          className="bg-contain slideBackground invert bg-center bg-no-repeat  m-36 h-50vh"
           style={{
-            backgroundImage: `url('${image}')`,
+            backgroundImage: `url('${logoImg}')`,
           }}
         />
       )}
       <div
-        className="slideContent"
+        className="w-[90vw] slideContent md:w-[60%]"
         style={{
           backgroundImage: `url('${image}')`,
         }}
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="slideTitle" dir="auto">
+            <h2 className="slideTitle text-6xl text-neutral-content" dir="auto">
               {title}
             </h2>
           )}
           {subtitle && (
-            <h3 className="slideSubtitle" dir="auto">
+            <h3 className="slideSubtitle text-6xl before:text-neutral-content" dir="auto">
               {subtitle}
             </h3>
           )}
           {description && (
-            <p className="slideDescription" dir="auto">
+            <p className="slideDescription text-xl" dir="auto">
               {description}
             </p>
           )}
@@ -144,7 +144,7 @@ const Carousel = ({ slides, isPageBackground }) => {
   return (
     <section className="slidesWrapper ">
       <div className="slides">
-        <button className="prevSlideBtn" onClick={handlePrevSlide}>
+        <button className="prevSlideBtn top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handlePrevSlide}>
           <i className="fas fa-chevron-left" />
         </button>
 
@@ -174,7 +174,7 @@ const Carousel = ({ slides, isPageBackground }) => {
             );
           }
         })}
-        <button className="nextSlideBtn" onClick={handleNextSlide}>
+        <button className="nextSlideBtn top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handleNextSlide}>
           <i className="fas fa-chevron-right" />
         </button>
       </div>
