@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useLayoutEffect, useRef } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 import Navbar from "./Navbar";
 import Logo from "../assests/logo_crop.png";
