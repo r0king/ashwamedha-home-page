@@ -20,30 +20,33 @@ class HighlightBlock extends Component {
 						</div>
 						<div className="container mx-auto space-y-24">
 							<div className="flex flex-col lg:flex-row">
-								<img src={Highlight1} alt="H1" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight3} alt="H3" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
-									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
-									<h3 className="text-3xl font-bold">We're not reinventing the wheel</h3>
-									<p className="my-6 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-									<button type="button" className="self-start text-neutral-content">Action</button>
+									
+									<h3 className="text-3xl font-bold">BMC Bicycle Stunt</h3>
+									<p className="my-6 dark:text-gray-400">As the main attraction of the event, last time we had a spine thrilling spectacle of BMC Bicycle Stunt powdered by Mad Bikes Official.
+But the actual Show Stopper of the event was the magnificent and spectacular BMW Motorrad Stunt Show!!! Both of them giving the audience the thrill and splendid experience of the escapade!!!
+</p>
+									
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row-reverse">
 								<img src={Highlight2} alt="H2" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
-									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
-									<h3 className="text-3xl font-bold">We're not reinventing the wheel</h3>
-									<p className="my-6 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-									<button type="button" className="self-start text-neutral-content">Action</button>
+									
+									<h3 className="text-3xl font-bold">Tons of Events yet to be explored</h3>
+									<p className="my-6 dark:text-gray-400">Also we had some great collection of both technical and non- technical events which gave a platform for students to boost their knowledge and a fun gala time!
+</p>
+									
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row">
-								<img src={Highlight3} alt="H3" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight1} alt="H1" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
-									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
-									<h3 className="text-3xl font-bold">We're not reinventing the wheel</h3>
-									<p className="my-6 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-									<button type="button" className="self-start text-neutral-content">Action</button>
+									
+									<h3 className="text-3xl font-bold">Goodies & Prizes</h3>
+									<p className="my-6 dark:text-gray-400">With some great prize pools and goodies, the event was a great success among the students. The 2 day event covered almost every arena of technological events and proved to be a wonderful amalgam of fun and joy.</p>
+									
 								</div>
 							</div>
 						</div>
