@@ -43,16 +43,14 @@ export default class Navbar extends Component {
     });
   };
   render() {
-    const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
+    const opacity = Math.min(100 / this.state.currentScrollHeight*2  , 1)
+    console.log(opacity)
     return (
       <div>
         <nav className="bg-transparent rounded fixed z-20 w-screen mb-3 border-neutral-content border-b-2 flex-shrink" style={{opacity}}>
-          <div className="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="#home" className="flex items-center">
+          <div className="flex flex-wrap items-center justify-between w-screen mx-auto">
+            <a href="#home" className="flex items-stretch">
               <img src={Logo2} className="invert ml-2 px-2 py-2 h-[5vh] sm:h-[10vh]" alt="Logo" />
-              {/* <span className="self-center text-xl font-semibold text-white whitespace-nowrap">
-              Teqard labs
-            </span> */}
             </a>
             <button
               data-collapse-toggle="navbar-default"
