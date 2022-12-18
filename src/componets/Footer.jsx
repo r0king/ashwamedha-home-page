@@ -17,10 +17,10 @@ class Footer extends Component {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-            <div className=" divider lg:divider-horizontal"></div>
+            <div className=" divider md:divider-horizontal"></div>
 
             <div
-              className="flex flex-col justify-center  w-80 bg-base-300 place-items-center"
+              className="flex flex-col justify-center w-full md:w-80 bg-base-300 place-items-center"
               width={300}
               style={{ border: 0 }}
               allowFullScreen=""
