@@ -76,8 +76,9 @@ const Slide = ({
   offset,
   isPageBackground,
 }) => {
-  const active = offset === 0 ? true : null,
-    ref = useTilt(active);
+  const active = offset === 0 ? true : null
+  
+  const ref = useTilt(active);
 
   return (
     <div
@@ -89,14 +90,6 @@ const Slide = ({
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
       }}
     >
-      {isPageBackground && (
-        <div
-          className="bg-contain slideBackground lg:visible  invert bg-center bg-no-repeat  m-36 h-50vh bg-opacity-30"
-          style={{
-            backgroundImage: `url('${logoImg}')`,
-          }}
-        />
-      )}
       <div
         onClick={()=>{
           window.location.pathname = process.env.PUBLIC_URL + "/events"
@@ -151,10 +144,12 @@ const Carousel = ({ slides, isPageBackground }) => {
   return (
     <section className="slidesWrapper ">
       <div className="slides">
-        <button className="prevSlideBtn top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
+        <button className="prevSlideBtn z-20 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
           <i className="fas fa-chevron-left" />
         </button>
-
+        <div className="wrapperSlide opacity-0 md:hidden">
+          asdfasdf
+        </div>
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (slideIndex - i);
 
@@ -181,7 +176,7 @@ const Carousel = ({ slides, isPageBackground }) => {
             );
           }
         })}
-        <button className="nextSlideBtn top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handlePrevSlide}>
+        <button className="nextSlideBtn z-20 top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handlePrevSlide}>
           <i className="fas fa-chevron-right" />
         </button>
       </div>

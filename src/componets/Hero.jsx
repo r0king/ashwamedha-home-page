@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 import Navbar from "./Navbar";
 // import Intro from "./Intro";
+import logoImg from "../assests/logo_crop.png";
+
 export default class Hero extends Component {
   constructor(props) {
     super();
@@ -47,6 +49,14 @@ export default class Hero extends Component {
             </div>
           </section>
         </div>
+        {/* this is put an image as a watermark for this page */}
+
+        <img
+          src={logoImg}
+          className="fixed invert m-auto top-0 left-0 bottom-0 right-0 -z-10 opacity-20 h-[50vh]"
+          alt="ashwamedha"
+        />
+
         {/* <Intro /> */}
       </>
     );

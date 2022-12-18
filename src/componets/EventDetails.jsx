@@ -18,7 +18,7 @@ export class EventDetails extends Component {
       <div className="md:h-screen">
         <video
            width={window.innerWidth}
-            className="max-h-screen w-screen object-cover right-0 bottom-0 top-0 min-h-[100%] bg-base-300 min-w-[100%] absolute -z-20"
+            className="max-h-screen  w-screen object-cover right-0 bottom-0 top-0 min-h-[100%] bg-base-300 min-w-[100%] fixed -z-20"
             loop
             autoPlay
             muted
