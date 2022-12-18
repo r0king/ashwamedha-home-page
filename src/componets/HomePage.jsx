@@ -5,13 +5,15 @@ import Highlight from "./Highlight";
 import EventCarousel from "./EventCarousel";
 import Footer from "./Footer";
 import About from "./About";
-import "./Carousel.module.css"
+import "./Carousel.module.css";
+import Navbar from "./Navbar";
 export default class HomePage extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <Hero />
-        <About/>
+        <About />
         <EventCarousel />
         <Guest />
         <Highlight />
