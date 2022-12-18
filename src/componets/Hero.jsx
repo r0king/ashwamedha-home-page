@@ -1,4 +1,4 @@
-import React, { Component, useLayoutEffect, useRef } from "react";
+import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 import Navbar from "./Navbar";
 import Logo from "../assests/logo_crop.png";
@@ -19,7 +19,7 @@ export default class Hero extends Component {
         >
           <source src={bgVideo} type="video/mp4" />
         </video>
-        <div className="h-full bg-black/60 vid">
+        <div className="h-screen bg-black/60 vid">
 
           <section>
             <div className="py-1 text-white opacity-90">
