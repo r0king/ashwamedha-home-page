@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 import Navbar from "./Navbar";
-import Logo from "../assests/logo_crop.png";
 // import Intro from "./Intro";
 export default class Hero extends Component {
   constructor(props) {

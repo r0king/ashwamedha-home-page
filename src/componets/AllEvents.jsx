@@ -27,7 +27,7 @@ export default class AllEvents extends Component {
               <h2 className="text-base font-bold leading-4 lg:text-xl lg:leading-5 text-primary">
                 {slide.venue}
               </h2>
-              <h4 className="text-base leading-4 lg:text-lg lg:leading-5 "></h4>
+              <h4 className="text-base leading-4 lg:text-lg lg:leading-5 ">{" "}</h4>
               <div className="work flex justify-center opacity-100">
                 <a class="button-style1" href={process.env.PUBLIC_URL+"/"+slide.id} target="_self">
                   <span class="d">

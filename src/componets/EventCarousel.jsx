@@ -98,6 +98,9 @@ const Slide = ({
         />
       )}
       <div
+        onClick={()=>{
+          window.location.pathname = process.env.PUBLIC_URL + "/events"
+        }}
         className="w-[90vw] slideContent md:w-[60%] bg-opacity-25"
         style={{
           backgroundImage: `url('${image}')`,
@@ -105,7 +108,7 @@ const Slide = ({
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="slideTitle text-5xl lg:text-6xl text-neutral-content lg:right-24" dir="auto">
+            <h2 className="slideTitle text-5xl lg:text-6xl text-neutral-content lg:right-10" dir="auto">
               {title}
             </h2>
           )}
@@ -201,8 +204,8 @@ const slides = [
   },
   {
     id: 2,
-    title: "Fun",
-    subtitle: "Zone",
+    title: "Comming",
+    subtitle: "Soon",
     description: "Where Fun and Tech Collide!",
     image: funImg,
   },
