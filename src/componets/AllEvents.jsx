@@ -36,12 +36,12 @@ export default class AllEvents extends Component {
                         View More
                       </button>
                             </div>
-                            <div className="flex items-end h-full pb-6">
+                            {/* <div className="flex items-end h-full pb-6">
                                 
                                 <h3 className="text-xl font-semibold leading-5 lg:text-2xl lg:leading-6  align-bottom">
                                     {slide.name}{" "}
                                 </h3>
-                            </div>
+                            </div> */}
                             
                     
                     
