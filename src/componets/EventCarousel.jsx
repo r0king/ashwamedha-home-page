@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
 import logoImg from "../assests/logo_crop.png";
+import Tech from "../assests/tech.jpg";
 const useTilt = () => {
   const ref = useRef(null);
 
@@ -87,7 +88,7 @@ const Slide = ({
     >
       {isPageBackground && (
         <div
-          className="bg-contain slideBackground invert bg-center bg-no-repeat  m-36 h-50vh"
+          className="bg-center bg-no-repeat bg-contain slideBackground invert m-36 h-50vh"
           style={{
             backgroundImage: `url('${logoImg}')`,
           }}
@@ -101,17 +102,17 @@ const Slide = ({
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="slideTitle text-5xl lg:text-6xl text-neutral-content" dir="auto">
+            <h2 className="text-5xl slideTitle lg:text-6xl text-neutral-content" dir="auto">
               {title}
             </h2>
           )}
           {subtitle && (
-            <h3 className="slideSubtitle text-5xl lg:text-6xl before:text-neutral-content" dir="auto">
+            <h3 className="text-5xl slideSubtitle lg:text-6xl before:text-neutral-content" dir="auto">
               {subtitle}
             </h3>
           )}
           {description && (
-            <p className="slideDescription text-xl lg:text-2xl" dir="auto">
+            <p className="text-xl slideDescription lg:text-2xl" dir="auto">
               {description}
             </p>
           )}
@@ -142,7 +143,7 @@ const Carousel = ({ slides, isPageBackground }) => {
   };
 
   return (
-    <section className="slidesWrapper ">
+    <section id="event" className="slidesWrapper ">
       <div className="slides">
         <button className="prevSlideBtn top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handlePrevSlide}>
           <i className="fas fa-chevron-left" />
@@ -190,32 +191,26 @@ Carousel.propTypes = {
 const slides = [
   {
     id: 1,
-    title: "First",
-    subtitle: "slide",
-    description: "Praesent ac sem eget est.",
+    title: "  Competitions",
+    subtitle: "",
+    description: "",
     image: "https://picsum.photos/id/1/500/500",
   },
   {
     id: 2,
-    title: "Second",
-    subtitle: "slide",
-    description: "Praesent ac sem eget est.",
+    title: "  Workshops",
+    subtitle: "",
+    description: "",
     image: "https://picsum.photos/id/234/500/500",
   },
   {
     id: 3,
-    title: "Third",
-    subtitle: "slide",
-    description: "Praesent ac sem eget est.",
+    title: "  Coming",
+    subtitle: "  soon",
+    description: "",
     image: "https://picsum.photos/id/790/500/500",
   },
-  {
-    id: 3,
-    title: "Third",
-    subtitle: "slide",
-    description: "Praesent ac sem eget est.",
-    image: "https://picsum.photos/id/790/500/500",
-  },
+  
 ];
 
 const EventCarousel = () => <Carousel slides={slides} isPageBackground />;

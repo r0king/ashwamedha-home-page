@@ -20,30 +20,31 @@ const AboutBlock = (props: inViewport) => {
 
   return (
     <div ref={forwardedRef}>
+      
       {transition((style, item) =>
         item ? (
           <animated.div
             className="md:h-[85vh] w-full overflow-hidden "
             style={style}
           >
-            <div className="h-full flex flex-col justify-center">
-              <div className="lg:-mx-6 lg:flex lg:items-center justify-center flex-auto sm:flex sm:items-center p-4">
-                <div className="lg:w-1/4 sm:w-1/2 lg:mx-6 w-full h-full rounded-lg lg:h-full sm:h-full flex flex-col justify-center">
+            <div className="flex flex-col justify-center h-full">
+              <div className="justify-center flex-auto p-4 lg:-mx-6 lg:flex lg:items-center sm:flex sm:items-center">
+                <div className="flex flex-col justify-center w-full h-full rounded-lg lg:w-1/4 sm:w-1/2 lg:mx-6 lg:h-full sm:h-full">
                   <img
                     className="object-cover object-center rounded-lg "
                     src={aboutImg}
                     alt=""
                   />
                 </div>
-                <div className="lg:w-1/2 lg:px-6 lg:mt-0 sm:w-1/2 sm:ml-6">
-                  <p className="text-3xl font-semibold text-justify text-orange-400 mt-2">
+                <div id="about" className="lg:w-1/2 lg:px-6 lg:mt-0 sm:w-1/2 sm:ml-6">
+                  <p className="mt-2 text-3xl font-semibold text-justify text-orange-400">
                     <span className="inline-block w-16 h-0.5 bg-orange-400  mb-2 mr-12" />
                     ABOUT US
                   </p>
-                  <p className="text-5xl font-semibold text-justify text-white mt-2">
+                  <p className="mt-2 text-5xl font-semibold text-justify text-white">
                     Who We Are
                   </p>
-                  <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400 text-justify">
+                  <p className="max-w-lg mt-6 text-justify text-gray-500 dark:text-gray-400">
                     “ Sunt nisi consequat cupidatat consequat adipisicing
                     consequat anim proident deserunt culpa pariatur adipisicing
                     excepteur. Irure elit ullamco eiusmod reprehenderit do non.
