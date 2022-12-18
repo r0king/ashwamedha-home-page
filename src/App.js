@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import EventDetails from "./componets/EventDetails";
 import HomePage from "./componets/HomePage";
 import EventCarousel from "./componets/EventCarousel";
+import About from "./componets/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/:name/" element={<EventDetails />} />
         <Route path="/events" element={<AllEvents/>}/>
         <Route path="/test" element={<EventCarousel/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
     </BrowserRouter>
   );

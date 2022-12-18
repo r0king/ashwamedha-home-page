@@ -85,7 +85,7 @@ export default class Navbar extends Component {
               <ul className="flex flex-col px-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
                 <li>
                   <a
-                    href="#home"
+                    href="/ashwamedha-home-page/"
                     className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                     aria-current="page"
                   >
@@ -94,7 +94,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <a
-                    href="#anatomy"
+                    href="/ashwamedha-home-page/about"
                     className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
                   >
                     About

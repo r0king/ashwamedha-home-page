@@ -25,7 +25,7 @@ export default class Hero extends Component {
             <div className="py-1 text-white opacity-90">
               <div className="container flex items-center evr md:flex-row md:my-24">
                 <div className="flex flex-col flex-shrink items-start justify-center mbox w-full pt-8 pl-4 lg:w-1/3">
-                  <h1 className="head1 flex w-full">
+                  <h1 className=" head1  flex w-full">
                   <span className='one'>A</span>
                   <span className='one'>S</span>
                   <span className='one'>H</span>

@@ -18,7 +18,7 @@
     "react-in-viewport": "^1.0.0-alpha.28",
     "react-router-dom": "^6.4.2",
     "react-scripts": "^5.0.1",
-    "react-spring": "^9.6.0",
+    "react-spring": "^9.6.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
