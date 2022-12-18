@@ -11,7 +11,7 @@ class GuestBlock extends Component {
           <div className="h-[32rem] ">
             <div className="container px-6 py-10 mx-auto">
               <h1 id="guest" className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-                The Guest
+                Special Guests
               </h1>
               <div className="flex justify-center mx-auto mt-6">
                 <span className="inline-block w-40 h-1 rounded-full bg-neutral-content" />

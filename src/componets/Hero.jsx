@@ -19,7 +19,7 @@ export default class Hero extends Component {
         >
           <source src={bgVideo} type="video/mp4" />
         </video>
-        <div className="h-full bg-black/60 vid">
+        <div className="h-screen bg-black/60 vid">
 
           <section>
             <div className="py-1 text-white opacity-90">

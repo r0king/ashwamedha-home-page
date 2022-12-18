@@ -3,7 +3,10 @@ import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
 import logoImg from "../assests/logo_crop.png";
-import Tech from "../assests/tech.jpg";
+import compImg from "../assests/events/comp.png"
+import funImg from "../assests/events/funzone.png"
+import workImg from "../assests/events/workshop.png"
+
 const useTilt = () => {
   const ref = useRef(null);
 
@@ -88,31 +91,31 @@ const Slide = ({
     >
       {isPageBackground && (
         <div
-          className="bg-center bg-no-repeat bg-contain slideBackground invert m-36 h-50vh"
+          className="bg-contain slideBackground invert bg-center bg-no-repeat  m-36 h-50vh bg-opacity-30"
           style={{
             backgroundImage: `url('${logoImg}')`,
           }}
         />
       )}
       <div
-        className="w-[90vw] slideContent md:w-[60%]"
+        className="w-[90vw] slideContent md:w-[60%] bg-opacity-25"
         style={{
           backgroundImage: `url('${image}')`,
         }}
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="text-5xl slideTitle lg:text-6xl text-neutral-content" dir="auto">
+            <h2 className="slideTitle text-5xl lg:text-6xl text-neutral-content lg:right-24" dir="auto">
               {title}
             </h2>
           )}
           {subtitle && (
-            <h3 className="text-5xl slideSubtitle lg:text-6xl before:text-neutral-content" dir="auto">
+            <h3 className="slideSubtitle text-5xl lg:text-6xl before:text-neutral-content lg:left-24" dir="auto">
               {subtitle}
             </h3>
           )}
           {description && (
-            <p className="text-xl slideDescription lg:text-2xl" dir="auto">
+            <p className="slideDescription text-xl lg:text-2xl" dir="auto">
               {description}
             </p>
           )}
@@ -143,9 +146,9 @@ const Carousel = ({ slides, isPageBackground }) => {
   };
 
   return (
-    <section id="event" className="slidesWrapper ">
+    <section className="slidesWrapper ">
       <div className="slides">
-        <button className="prevSlideBtn top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handlePrevSlide}>
+        <button className="prevSlideBtn top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
           <i className="fas fa-chevron-left" />
         </button>
 
@@ -175,7 +178,7 @@ const Carousel = ({ slides, isPageBackground }) => {
             );
           }
         })}
-        <button className="nextSlideBtn top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handleNextSlide}>
+        <button className="nextSlideBtn top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handlePrevSlide}>
           <i className="fas fa-chevron-right" />
         </button>
       </div>
@@ -191,26 +194,25 @@ Carousel.propTypes = {
 const slides = [
   {
     id: 1,
-    title: "  Competitions",
-    subtitle: "",
-    description: "",
-    image: "https://picsum.photos/id/1/500/500",
+    title: "Competion",
+    subtitle: "Events",
+    description: "Bring your A-game to the ashwamedha competition.",
+    image: compImg,
   },
   {
     id: 2,
-    title: "  Workshops",
-    subtitle: "",
-    description: "",
-    image: "https://picsum.photos/id/234/500/500",
+    title: "Fun",
+    subtitle: "Zone",
+    description: "Where Fun and Tech Collide!",
+    image: funImg,
   },
   {
     id: 3,
-    title: "  Coming",
-    subtitle: "  soon",
-    description: "",
-    image: "https://picsum.photos/id/790/500/500",
+    title: "Work",
+    subtitle: "Shops",
+    description: "Experience the future, now. Join our tech fest workshops.",
+    image: workImg,
   },
-  
 ];
 
 const EventCarousel = () => <Carousel slides={slides} isPageBackground />;
