@@ -194,12 +194,12 @@ const slides = [
     id: 1,
     title: "Competion",
     subtitle: "Events",
-    description: "Bring your A-game to the ashwamedha competition.",
+    description: "Bring your A-game to the Ashwamedha competitions.",
     image: compImg,
   },
   {
     id: 2,
-    title: "Comming",
+    title: "Coming",
     subtitle: "Soon",
     description: "Where Fun and Tech Collide!",
     image: funImg,
@@ -208,7 +208,7 @@ const slides = [
     id: 3,
     title: "Work",
     subtitle: "Shops",
-    description: "Experience the future, now. Join our tech fest workshops.",
+    description: "Experience the future, now. Join our Tech Fest workshops.",
     image: workImg,
   },
 ];
