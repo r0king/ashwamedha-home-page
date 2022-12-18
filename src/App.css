@@ -1,33 +1,25 @@
 .work {
   display: none;
-
 }
 
 /* Media Queries - Start */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .vid {
-    height: 100vw;
-    width: 100%;
-
-  }
-
   .text1 {
     font-size: 1rem;
   }
 
-  .mbox{
+  .mbox {
     padding-top: 25vw;
   }
 
-  .navi{
+  .navi {
     margin-right: 0rem;
   }
 
   .text2 {
     font-size: 0.8rem;
   }
-
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -40,12 +32,10 @@
   }
 
   .vid {
-    height: 100vh;
     width: 100vw;
-
   }
 
-  .mbox{
+  .mbox {
     padding-top: 25vw;
   }
 
@@ -56,17 +46,12 @@
   .text2 {
     font-size: 1rem;
   }
-
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .vid {
-    height: 100vh;
     width: 100%;
-
   }
-
 
   .text1 {
     font-size: 2rem;
@@ -77,23 +62,15 @@
   }
 }
 
-
 @media only screen and (min-width: 1024px) and (max-width: 1260px) {
-
   .vid {
-    height: 100vh;
     width: 100%;
-
   }
-
 }
 
 @media only screen and (min-width: 1260px) and (max-width: 1536px) {
-
   .vid {
-    height: 100vh;
     width: 100%;
-
   }
 
   .text1 {
@@ -240,7 +217,6 @@ textarea.style1 {
   bottom: 10%;
 }
 
-
 .button-style1:hover .d:before,
 .button-style1:hover .d:after {
   left: 0;
@@ -291,8 +267,6 @@ textarea.style1 {
   justify-content: center;
 }
 
-
-
 .button-style1 span,
 .button-style2 span,
 .button-style3 span,
@@ -307,13 +281,10 @@ textarea.style1 {
 }
 
 @media only screen and (min-width: 1536px) and (max-width: 2160px) {
-
   .vid {
     height: 100vh;
     width: 100%;
-
   }
-
 
   .text1 {
     font-size: 3rem;
@@ -323,10 +294,6 @@ textarea.style1 {
     font-size: 1rem;
   }
 }
-
-
-
-
 
 .main:hover .work {
   display: inline;
@@ -442,10 +409,8 @@ textarea.style1 {
   }
 }
 
-
-
 svg {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   position: relative;
   width: 100%;
   height: 100%;

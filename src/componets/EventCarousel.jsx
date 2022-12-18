@@ -91,7 +91,7 @@ const Slide = ({
     >
       {isPageBackground && (
         <div
-          className="bg-contain slideBackground lg:visible invisible invert bg-center bg-no-repeat  m-36 h-50vh bg-opacity-30"
+          className="bg-contain slideBackground lg:visible  invert bg-center bg-no-repeat  m-36 h-50vh bg-opacity-30"
           style={{
             backgroundImage: `url('${logoImg}')`,
           }}
