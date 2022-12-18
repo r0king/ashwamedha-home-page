@@ -19,7 +19,7 @@
      } 
 
      .one{
-      font-size: 3.5rem;
+      font-size: 3rem;
       margin-top: 4rem;
       
      }
@@ -34,7 +34,7 @@
 
      .mbox{
       margin-top: 4vw;
-      padding-right: 10vw;
+      padding-right:  10vw;
      }
 
      .text1{
@@ -64,16 +64,17 @@
 
    .mbox{
     margin-top: 96px;
+    padding-right: 2vw;
    }
 
    .one{
-    font-size: 2.5rem;
+    font-size: 2rem;
     
    }
 
    .back{
     min-width: 9rem;
-    height: 9rem ;
+    height: 8rem ;
     position: relative;
     margin-top: 2rem;
    }

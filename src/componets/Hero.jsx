@@ -2,22 +2,11 @@ import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 import Navbar from "./Navbar";
 import Logo from "../assests/logo_crop.png";
-import $ from 'jquery';
-
+// import Intro from "./Intro";
 export default class Hero extends Component {
   constructor(props) {
     super();
   }
-  jQueryCode = () => {
-    $("header").append("<div className='glitch-window'></div>");
-    $("h1.glitched").clone().appendTo(".glitch-window");
-  }
-
-  componentDidMount() {
-    this.jQueryCode();
-  }
-
-
   render() {
     return (
       <>
@@ -63,8 +52,8 @@ export default class Hero extends Component {
           Register Now</a>
        
                 </div>
-                <div className="justify-center mt-12 mb-6 md:mb-0 md:mt-0 md:ml-12 lg:w-2/3">
-                  <div className="flex flex-wrap content-center justify-end mr-32 h-48">
+                <div className="mt-12 mb-6 md:mb-0 md:mt-0 md:ml-12 lg:w-2/3">
+                  <div className="flex  justify-end h-auto">
                     <img src={Logo} alt="Logo" className="invert h-[60vh] w-[30vw] back" />
                   </div>
                 </div>
@@ -73,16 +62,8 @@ export default class Hero extends Component {
           </section>
 
         </div>
+        {/* <Intro /> */}
       </>
     );
   }
 }
-/*  <div
-            width={window.innerWidth}
-            className="h-[80vh]  z-10 lg:h-[100vh]"
-          > 
-            <img
-                src={Logo}
-                alt=""
-                className="invert w-1/2 pt-[20vh] pl-[5vw] lg:w-1/3 sm:w-1/5 h-1/3"
-              />*/

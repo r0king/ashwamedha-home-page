@@ -1,27 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-html,
-body,
-#app {
-  height: 100%;
-}
-
 #app {
   width: 100%;
   display: flex;
@@ -33,8 +9,8 @@ body * {
 }
 
 .slideContent {
-  width: 40vw;
-  height: 60vh;
+  width: 250px;
+  height: 300px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,6 +92,21 @@ body * {
   justify-content: center;
   overflow: hidden;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .slidesWrapper {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .slidesWrapper {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .slidesWrapper {
+    width: 1170px;
+  }
 }
 .slidesWrapper *,
 .slidesWrapper *::before,
