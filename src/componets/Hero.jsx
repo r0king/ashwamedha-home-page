@@ -19,13 +19,13 @@ export default class Hero extends Component {
         >
           <source src={bgVideo} type="video/mp4" />
         </video>
-        <div className=" bg-black/60 h-full vid">
+        <div className="h-full bg-black/60 vid">
 
           <section>
             <div className="py-1 text-white opacity-90">
               <div className="container flex flex-col items-center evr md:flex-row md:my-24">
-                <div className="flex flex-col flex-shrink items-start justify-center mbox w-full pt-8 pl-4 lg:w-1/3">
-                  <h1 className="head1 flex w-full">
+                <div className="flex flex-col items-start justify-center flex-shrink w-full pt-8 pl-4 mbox lg:w-1/3">
+                  <h1 className="flex w-full head1">
                   <span className='one'>A</span>
                   <span className='one'>S</span>
                   <span className='one'>H</span>
@@ -52,7 +52,7 @@ export default class Hero extends Component {
           Register Now</a>
 
                 </div>
-                <div className="justify-center pl-60 mt-12 mb-6 ml-0 md:mb-0 md:mt-0 md:ml-12 lg:w-2/3 ">
+               {/*<div className="justify-center mt-12 mb-6 ml-10 pl-60 md:mb-0 md:mt-0 md:ml-12 lg:w-2/3 ">
         <div className="flex flex-wrap content-center h-48">
           <div>
             <img className="hidden inline-block mt-28 xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png" /></div>
@@ -61,7 +61,7 @@ export default class Hero extends Component {
           <div>
             <img className="hidden inline-block mt-28 lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png" /></div>
         </div>
-      </div>
+    </div>*/} 
               </div>
             </div>
           </section>

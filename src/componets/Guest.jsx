@@ -6,16 +6,16 @@ class GuestBlock extends Component {
   render() {
     return (
       <div>
-        <section>
+        <section id="guest">
           <div className="h-[32rem] ">
             <div className="container px-6 py-10 mx-auto">
               <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
                 The Guest
               </h1>
               <div className="flex justify-center mx-auto mt-6">
-                <span className="inline-block w-40 h-1 bg-neutral-content rounded-full" />
-                <span className="inline-block w-3 h-1 mx-1 bg-neutral-content rounded-full" />
-                <span className="inline-block w-1 h-1 bg-neutral-content rounded-full" />
+                <span className="inline-block w-40 h-1 rounded-full bg-neutral-content" />
+                <span className="inline-block w-3 h-1 mx-1 rounded-full bg-neutral-content" />
+                <span className="inline-block w-1 h-1 rounded-full bg-neutral-content" />
               </div>
               <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -24,7 +24,7 @@ class GuestBlock extends Component {
               </p>
             </div>
           </div>
-          <div className="flex justify-center items-center container  px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
+          <div className="container flex items-center justify-center px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
             <div className="mt-[4vh]  h-[60vh] w-[40vh] flex  flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700 ">
               <img
                 className="object-cover h-[54vh] w-[40vh] rounded-xl aspect-square"
@@ -34,13 +34,13 @@ class GuestBlock extends Component {
               <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
                 arthur melo
               </h1>
-              <p className="mt-2  capitalize ">Mentalist</p>
-              <div className="flex mt-3 -mx-2 pb-4">
+              <p className="mt-2 capitalize ">Mentalist</p>
+              <div className="flex pb-4 mt-3 -mx-2">
                 <a
                   href="https://www.Reddit.com"
                   rel="noreferrer"
                   target="_blank"
-                  className="mx-2 text-neutral-content transition-colors duration-300 hover:text-primary"
+                  className="mx-2 transition-colors duration-300 text-neutral-content hover:text-primary"
                   aria-label="Reddit"
                 >
                   <svg
@@ -56,7 +56,7 @@ class GuestBlock extends Component {
                   href="https://www.Facebook.com"
                   rel="noreferrer"
                   target="_blank"
-                  className="mx-2 text-neutral-content transition-colors duration-300 hover:text-primary"
+                  className="mx-2 transition-colors duration-300 text-neutral-content hover:text-primary"
                   aria-label="Facebook"
                 >
                   <svg
@@ -72,7 +72,7 @@ class GuestBlock extends Component {
                   href="https://www.Github.com"
                   rel="noreferrer"
                   target="_blank"
-                  className="mx-2 text-neutral-content transition-colors duration-300 hover:text-primary"
+                  className="mx-2 transition-colors duration-300 text-neutral-content hover:text-primary"
                   aria-label="Github"
                 >
                   <svg
@@ -111,7 +111,7 @@ const WrapperBlock = (props: { inViewport: boolean }) => {
     <div ref={forwardedRef}>
       {transition((style, item) =>
         item ? (
-          <animated.div className=" w-full" style={style}>
+          <animated.div className="w-full " style={style}>
             <GuestBlock />
           </animated.div>
         ) : (

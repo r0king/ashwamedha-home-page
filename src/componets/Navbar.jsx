@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo2 from "../assests/logo_crop.png";
 
 export default class Navbar extends Component {
@@ -46,7 +47,7 @@ export default class Navbar extends Component {
     const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
     return (
       <div>
-        <nav className="bg-transparent rounded fixed z-20 w-screen mb-3 border-neutral-content border-b-2 flex-shrink" style={{opacity}}>
+        <nav className="fixed z-20 flex-shrink w-screen mb-3 bg-transparent border-b-2 rounded border-neutral-content" style={{opacity}}>
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <a href="#home" className="flex items-center">
               <img src={Logo2} className="invert ml-2 px-2 py-2 h-[5vh] sm:h-[10vh]" alt="Logo" />
@@ -86,7 +87,7 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="/ashwamedha-home-page/"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                     aria-current="page"
                   >
                     Home
@@ -95,42 +96,42 @@ export default class Navbar extends Component {
                 <li>
                   <a
                     href="/ashwamedha-home-page/about"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     About
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#community"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
+                  <AnchorLink
+                    href="#event"
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Events
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
+                  <AnchorLink
+                    href="#guest"
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Guests
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
-                    className="block py-2 pl-3 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary text-white md:p-0 "
+                  <AnchorLink
+                    href="#highlight"
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Highlights
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li>
-                  <a
+                  <AnchorLink
                     href="#contact"
-                    className="block py-2 pl-3 mr-7 pr-4 rounded text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
+                    className="block py-2 pl-3 pr-4 rounded mr-7 text-end hover:bg-opacity-75 hover:bg-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 "
                   >
                     Contact
-                  </a>
+                  </AnchorLink>
                 </li>
               </ul>
             </div>
