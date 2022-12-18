@@ -1,6 +1,10 @@
 import React, { Component, useState } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import handleViewport from "react-in-viewport";
+import Highlight1 from "../assests/high1.jpg";
+import Highlight2 from "../assests/high2.jpg";
+import Highlight3 from "../assests/high3.jpg";
+
 class HighlightBlock extends Component {
 	render() {
 		return (
@@ -16,7 +20,7 @@ class HighlightBlock extends Component {
 						</div>
 						<div className="container mx-auto space-y-24">
 							<div className="flex flex-col lg:flex-row">
-								<img src="https://source.unsplash.com/640x480/?1" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight1} alt="H1" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
 									<h3 className="text-3xl font-bold">We're not reinventing the wheel</h3>
@@ -25,7 +29,7 @@ class HighlightBlock extends Component {
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row-reverse">
-								<img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight2} alt="H2" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
 									<h3 className="text-3xl font-bold">We're not reinventing the wheel</h3>
@@ -34,7 +38,7 @@ class HighlightBlock extends Component {
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row">
-								<img src="https://source.unsplash.com/640x480/?3" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight3} alt="H3" className="h-80 dark:bg-gray-500 aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									<span className="text-xs uppercase text-neutral-content">Join, it's free</span>
 									<h3 className="text-3xl font-bold">We're not reinventing the wheel</h3>
