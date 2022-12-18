@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/ashwamedha-home-page/static/css/main.c8874a6b.css",
-    "main.js": "/ashwamedha-home-page/static/js/main.b2176c3d.js",
+    "main.css": "/ashwamedha-home-page/static/css/main.610a0171.css",
+    "main.js": "/ashwamedha-home-page/static/js/main.daf5cabe.js",
     "static/js/787.ee564383.chunk.js": "/ashwamedha-home-page/static/js/787.ee564383.chunk.js",
     "static/media/Golden Stars.mp4": "/ashwamedha-home-page/static/media/Golden Stars.1bdea5b886354d243cd3.mp4",
     "static/media/Guest.jpg": "/ashwamedha-home-page/static/media/Guest.de0141cbcdc1fb398168.jpg",
-    "static/media/high3.jpg": "/ashwamedha-home-page/static/media/high3.0c54cbb5f8ab21aea048.jpg",
     "static/media/high2.jpg": "/ashwamedha-home-page/static/media/high2.ddca17503315ef8175ba.jpg",
     "static/media/high1.jpg": "/ashwamedha-home-page/static/media/high1.3dec58ce71f99a257ccf.jpg",
     "static/media/bgvideo.webm": "/ashwamedha-home-page/static/media/bgvideo.f590ae37189f15a625ba.webm",
     "static/media/comp.png": "/ashwamedha-home-page/static/media/comp.afd31a9c243b6d8cb0d3.png",
     "static/media/funzone.png": "/ashwamedha-home-page/static/media/funzone.2155f3992663a8123af2.png",
     "static/media/workshop.png": "/ashwamedha-home-page/static/media/workshop.278d7b4b44e8803db92a.png",
+    "static/media/high3.jpg": "/ashwamedha-home-page/static/media/high3.a2bd9c98ce082d0548b6.jpg",
     "static/media/about.jpg": "/ashwamedha-home-page/static/media/about.d4dede094ea594f4a848.jpg",
     "static/media/logo_crop.png": "/ashwamedha-home-page/static/media/logo_crop.6d78a30974cb308f08af.png",
     "index.html": "/ashwamedha-home-page/index.html",
-    "main.c8874a6b.css.map": "/ashwamedha-home-page/static/css/main.c8874a6b.css.map",
-    "main.b2176c3d.js.map": "/ashwamedha-home-page/static/js/main.b2176c3d.js.map",
+    "main.610a0171.css.map": "/ashwamedha-home-page/static/css/main.610a0171.css.map",
+    "main.daf5cabe.js.map": "/ashwamedha-home-page/static/js/main.daf5cabe.js.map",
     "787.ee564383.chunk.js.map": "/ashwamedha-home-page/static/js/787.ee564383.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8874a6b.css",
-    "static/js/main.b2176c3d.js"
+    "static/css/main.610a0171.css",
+    "static/js/main.daf5cabe.js"
   ]
 }
