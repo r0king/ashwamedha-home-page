@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
 import logoImg from "../assests/logo_crop.png";
+import Tech from "../assests/tech.jpg";
 const useTilt = () => {
   const ref = useRef(null);
 
