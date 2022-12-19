@@ -25,14 +25,14 @@ export default class AllEvents extends Component {
                 className="object-cover object-center w-full "
               />
 
-              <div className="absolute flex flex-col justify-between flex-shrink-0 w-full h-full p-6 pb-2 bg-black bg-opacity-40 ">
+              {/* <div className="absolute flex flex-col justify-between flex-shrink-0 w-full h-full p-6 pb-2 bg-black bg-opacity-40 ">
                 <h2 className="text-base font-bold leading-4 lg:text-xl lg:leading-5 text-primary">
                   {slide.venue}
                 </h2>
                 <h4 className="text-base leading-4 lg:text-lg lg:leading-5 ">
                   {""}
                 </h4>
-              </div>
+              </div> */}
             </div>
           </a>
         </div>
@@ -48,11 +48,11 @@ export default class AllEvents extends Component {
         {this.state.loaded && (
           <div className="relative flex items-center justify-center w-full">
             <div className="w-full h-full mx-auto mt-[15vh]">
-                <div className="pl-52 mb-8">
+                {/* <div className="mb-8 pl-52">
                     <a href={process.env.PUBLIC_URL + "/#"}>
             <button type="button" className="px-8 py-3 font-semibold border rounded dark:border-orange-400 dark:text-gray-100">Back to Home</button>
             </a>
-                </div>
+                </div> */}
                
               <div
                 id="slider"

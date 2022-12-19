@@ -196,7 +196,7 @@ Carousel.propTypes = {
 const slides = [
   {
     id: 1,
-    title: "Competion",
+    title: "Competitive",
     subtitle: "Events",
     description: "Bring your A-game to the Ashwamedha competitions.",
     image: compImg,

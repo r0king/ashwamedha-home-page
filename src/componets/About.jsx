@@ -96,8 +96,8 @@ class AboutContent extends Component {
             <p className="mt-2 text-5xl font-semibold text-justify text-white">
               Who We Are
             </p>
-            <div className="max-w-lg mt-6 text-lg text-justify text-gray-500 dark:text-gray-400">
-              <p>
+            <div className="max-w-[50 rem] mt-6 text-lg text-justify text-gray-500 dark:text-gray-400">
+              <p> 
                 Ashwamedha is the annual National level Technical fest of Adi
                 Shankara Institute of Engineering and Technology. Previously
                 hosted with much grandeur, Ashwamedha 2019 was lauded for its
@@ -111,7 +111,7 @@ class AboutContent extends Component {
                 way to jazz up the technical skills of a student in a creative
                 way.
               </p>
-              {this.props.more && (
+              {/* {this.props.more && (
                 <p>
                   Ashwamedha is the annual National level Technical fest of Adi
                   Shankara Institute of Engineering and Technology. Previously
@@ -126,11 +126,11 @@ class AboutContent extends Component {
                   perfect way to jazz up the technical skills of a student in a
                   creative way.
                 </p>
-              )}
+              )} */}
             </div>
 
-            {!this.props.more && (
-              <div className="flex m-5 justify-start opacity-100">
+            {/* {!this.props.more && (
+              <div className="flex justify-start m-5 opacity-100">
                 <a
                   className="button-style1"
                   href={process.env.PUBLIC_URL + "/#/"}
@@ -142,7 +142,7 @@ class AboutContent extends Component {
                   <span>More Info</span>
                 </a>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
