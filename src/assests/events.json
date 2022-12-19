@@ -229,7 +229,7 @@
   "id": 22,
   "name": "Flutter Workshop",
   "date": "22 December 2022",
-  "src": "https://live.staticflickr.com/65535/52570917946_1a812a3f23_b.jpg",
+  "src": "https://live.staticflickr.com/65535/52573082985_0d133294f4_b.jpg",
   "time": "9.30 am - 12 pm",
   "venue": "Central Computing Faccility (CCF) Lab",
   "content":"Are you seeking for the best places to further your technical career in application development? </br></br> As a part of <b>ASHWAMEDHA '22 , IEEE SB ASIET</b> presents a hands-on workshop session on <b>Introduction to FLUTTER</b> held in collaboration between <b>IEEE Signal Processing Society and IEEE Power and Energy Society</b>. </br></br> <b>Speaker : </b></br> Mr. Akarsh Ashok </br> Flutter Developer & Mentor, XtrudAR Community</br></br><b> ⚜️ Registration Fees </br> IEEE Members : Free</br> Non-IEEE Members : 100/-</b></br> </br> <b>Rules and Regulations</b></br> <ul> <li>• General Rules of Ashwamedha '22 are applicable for this event</li> <li>• IEEE Members should provide Membership Certificate during registration</li> <li>• Participants are advised to bring laptops with them</li> </ul> </br> Hurry up, Grasp the nettle and register yourself in at </br></br> For further queries, contact</br> <b> Abhijth S : 7736169164</br> T N Adhitya Shenoy : 6282691585 <b> </br>",
@@ -237,22 +237,52 @@
 },
 {
   "id": 23,
-  "name": "Flutter Workshop",
+  "name": "Consept Art In Photoshop",
   "date": "22 December 2022",
-  "src": "https://live.staticflickr.com/65535/52570917946_1a812a3f23_b.jpg",
+  "src": "https://live.staticflickr.com/65535/52572881874_34f1777832_b.jpg",
   "time": "9:30 to 12:30",
-  "venue": "CCF Lab",
+  "venue": " ",
   "content": "Details about Event 6 on date 6 and time 6 at venue 6",
-  "link": ""
+  "link": "https://www.yepdesk.com/concept-art-in-ps"
 },
 {
   "id": 24,
-  "name": "Flutter Workshop",
+  "name": "Chainshot ",
   "date": "22 December 2022",
-  "src": "https://live.staticflickr.com/65535/52570917946_1a812a3f23_b.jpg",
+  "src":"https://live.staticflickr.com/65535/52572881844_6228bebea2_b.jpg" ,
   "time": "9:30 to 12:30",
-  "venue": "CCF Lab",
+  "venue": " ",
   "content": "Details about Event 6 on date 6 and time 6 at venue 6",
-  "link": ""
+  "link": "https://www.yepdesk.com/chainshot-relay"
+},
+{
+  "id": 25,
+  "name": "Wrench Workshop ",
+  "date": "22 December 2022",
+  "src": "https://live.staticflickr.com/65535/52572154802_6b93f304c1_b.jpg"   ,
+  "time": "9:30 to 12:30",
+  "venue": " ",
+  "content": "Details about Event 6 on date 6 and time 6 at venue 6",
+  "link": "https://www.yepdesk.com/wrench-workshop"
+},
+{
+  "id": 26,
+  "name": "Robo Soccer ",
+  "date": "22 December 2022",
+  "src": "https://live.staticflickr.com/65535/52573169338_b22aefe203_b.jpg"   ,
+  "time": "9:30 to 12:30",
+  "venue": " ",
+  "content": "Details about Event 6 on date 6 and time 6 at venue 6",
+  "link": "https://www.yepdesk.com/robosoccer4"
+},
+{
+  "id": 27,
+  "name": "JAM",
+  "date": "22 December 2022",
+  "src": " https://live.staticflickr.com/65535/52572188152_d796a7eee0_b.jpg"   ,
+  "time": "9:30 to 12:30",
+  "venue": " ",
+  "content": "Details about Event 6 on date 6 and time 6 at venue 6",
+  "link": "https://www.yepdesk.com/just-a-minute "
 }
 ]
