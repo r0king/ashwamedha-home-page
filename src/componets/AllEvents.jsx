@@ -48,6 +48,12 @@ export default class AllEvents extends Component {
         {this.state.loaded && (
           <div className="relative flex items-center justify-center w-full">
             <div className="w-full h-full mx-auto mt-[15vh]">
+                <div className="pl-52 mb-8">
+                    <a href={process.env.PUBLIC_URL + "/#"}>
+            <button type="button" className="px-8 py-3 font-semibold border rounded dark:border-orange-400 dark:text-gray-100">Back to Home</button>
+            </a>
+                </div>
+               
               <div
                 id="slider"
                 className="flex flex-wrap items-center justify-center mx-5 lg:gap-8 md:gap-6 gap-14"

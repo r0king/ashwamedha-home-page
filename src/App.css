@@ -411,7 +411,7 @@ svg text {
   animation: stroke 5s infinite alternate;
   stroke-width: 2;
   stroke: #365fa0;
-  font-size: 11rem;
+  font-size: 9rem;
 }
 
 @keyframes stroke {
