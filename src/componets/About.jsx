@@ -98,13 +98,13 @@ class AboutContent extends Component {
             <p className="mt-2 text-5xl font-semibold text-justify text-white">
               Who We Are
             </p>
-            <div className="max-w-lg mt-6 text-justify text-gray-500 dark:text-gray-400 text-lg">
+            <div className="max-w-lg mt-6 text-lg text-justify text-gray-500 dark:text-gray-400">
               <p>
                 Ashwamedha is the annual National level Technical fest of Adi
                 Shankara Institute of Engineering and Technology. Previously
                 hosted with much grandeur, Ashwamedha 2019 was lauded for its
                 magnificent poise. Now, 3 years later, after all the hustle and
-                bustle of the pandemic, Ashwamedhs 2022 is all set to bring
+                bustle of the pandemic, Ashwamedha 2022 is all set to bring
                 forth a bewildering experience for all. This year's fest will
                 feature a wide array of exciting competitions and informative
                 workshops spread across various technical disciplines.

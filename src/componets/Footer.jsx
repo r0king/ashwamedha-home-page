@@ -61,7 +61,7 @@ class Footer extends Component {
         <footer className="p-10 rounded footer footer-center text-base-content">
           <div>
             <div className="grid grid-flow-col gap-4">
-              <a href="https://www.tweeter.com">
+              <a href="https://instagram.com/ashwamedha.asiet?igshid=NDk5N2NlZjQ=" target={"_blank"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
