@@ -20,8 +20,6 @@ const AboutBlock = (props: inViewport) => {
   });
   if (inViewport && !isVisible) {
     setVisible(true);
-  } else if (!inViewport && isVisible) {
-    setVisible(false);
   }
 
   return (
@@ -106,7 +104,7 @@ class AboutContent extends Component {
                 forth a bewildering experience for all. This year's fest will
                 feature a wide array of exciting competitions and informative
                 workshops spread across various technical disciplines.
-                Ashwamedha'22 will be a one day evebt conducted for all
+                Ashwamedha'22 will be a one day event conducted for all
                 engineering students all over India. Ashwamedha is the perfect
                 way to jazz up the technical skills of a student in a creative
                 way.
