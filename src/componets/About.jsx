@@ -64,7 +64,7 @@ export default withParams(About);
 class AboutContent extends Component {
   render() {
     return (
-      <div className="flex flex-col justify-center h-full overflow-hidden">
+      <div className="flex flex-col justify-center h-full overflow-x-hidden">
         <div className="justify-center flex-auto p-4 lg:-mx-6 lg:flex lg:items-center sm:flex sm:items-center">
           <div
             className={
@@ -76,7 +76,7 @@ class AboutContent extends Component {
             <div 
                 className={
                   this.props.more
-                    ? "object-cover w-full object-center rounded-lg md:fixed md:w-[350px] top-0 md:m-5 bottom-0 flex flex-col justify-center"
+                    ? "object-cover w-full object-center rounded-lg md:fixed md:left-5 md:w-[350px] top-0 md:m-5 bottom-0 flex flex-col justify-center"
                     : ""
                 }>
               <img
