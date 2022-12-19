@@ -93,7 +93,7 @@ const Slide = ({
       <div className="bg-black w- opacity-40"></div>
       <div
         onClick={()=>{
-          window.location.pathname = process.env.PUBLIC_URL + "/events"
+          window.location.pathname = process.env.PUBLIC_URL + "/#/events"
         }}
         className="w-[90vw] slideContent md:w-[60%] bg-opacity-40"
         style={{
