@@ -18,6 +18,7 @@ export default class HomePage extends Component {
     return (
       <div>
         <Navbar
+          refAbout={this.refAbout}
           refGuest={this.refGuest}
           refHigh={this.refHigh}
           refContact={this.refContact}
