@@ -19,7 +19,7 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<HomePage aboutGlobalRef={this.aboutRef} />} />
           <Route path="/events" element={<AllEvents aboutGlobalRef={this.aboutRef}/>} />
-          <Route exact path="/about" element={<About more={true}/>} />
+          {/* <Route exact path="/about" element={<About more={true}/>} /> */}
           <Route path="/:name/" element={<EventDetails />} />
         </Routes>
       </HashRouter>

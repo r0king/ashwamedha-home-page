@@ -42,16 +42,17 @@ export default class AllEvents extends Component {
   }
   render() {
     return (
-      <div>
-        <Navbar events={true}/>
+      <div> 
+        {/* <Navbar events={true}/> */}
         {this.state.loaded && (
           <div className="relative flex items-center justify-center w-full">
-            <div className="w-full h-full mx-auto mt-[15vh]">
-                {/* <div className="mb-8 pl-52">
+            <div className="w-full h-full mx-auto mt-[5vh]">
+                <div className="pl-10 mb-8">
                     <a href={process.env.PUBLIC_URL + "/#"}>
-            <button type="button" className="px-8 py-3 font-semibold border rounded dark:border-orange-400 dark:text-gray-100">Back to Home</button>
+                    <button type="button" className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent">Back to Home</button>
+            {/* <button type="button" className="px-8 py-3 font-semibold border rounded dark:border-orange-400 dark:text-gray-100">Back to Home</button> */}
             </a>
-                </div> */}
+                </div>
                
               <div
                 id="slider"
