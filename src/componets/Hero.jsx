@@ -29,19 +29,21 @@ export default class Hero extends Component {
                     </text>
                   </svg>
 
-                  <h2 className="mb-2 text-3xl leading-relaxed md:text-2xl sm:text-xl md:leading-snug text1">
+                  <h2 className="mb-2 text-3xl leading-relaxed md:text-2xl sm:text-xl text-center md:text-left w-full md:leading-snug text1">
                     The Stallion Rises!
                   </h2>
-                  <p className="mb-4 text-lg md:text-base text-gray-50 text2">
+                  <p className="mb-4 text-lg md:text-base text-gray-50 text2 text-center md:text-left">
                     Explore your favourite events and register now to showcase
                     your talent and win exciting prizes.
                   </p>
-                  <a
-                    href="/#/events"
-                    className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent"
-                  >
-                    Register Now
-                  </a>
+                  <div className="flex md:justify-start justify-center w-full">
+                    <a
+                      href="/#/events"
+                      className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent"
+                    >
+                      Register Now
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
