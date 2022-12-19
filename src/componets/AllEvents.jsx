@@ -38,8 +38,7 @@ export default class AllEvents extends Component {
         </div>
       );
     });
-    this.setState({ slides: slidesHtml });
-    this.state.loaded = true;
+    this.setState({ slides: slidesHtml ,loaded:true});    
   }
   render() {
     return (

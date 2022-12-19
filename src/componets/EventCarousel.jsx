@@ -2,7 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
-import logoImg from "../assests/logo_crop.png";
 import compImg from "../assests/events/comp-dark.jpg"
 import funImg from "../assests/events/funzone-dark.jpg"
 import workImg from "../assests/events/workshop-dark.png"
@@ -147,11 +146,12 @@ const Carousel = ({ slides, isPageBackground }) => {
   return (
     <section className="slidesWrapper ">
       <div className="slides ">
-        <button className="prevSlideBtn z-20 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
+        <button className="prevSlideBtn z-30 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
           <i className="fas fa-chevron-left" />
         </button>
-        <div className="opacity-0 wrapperSlide md:hidden">
-          asdfasdf
+        <div className="opacity-0 md:hidden z-20 bg-white top-0 left-0 right-0 bottom-0 cursor-pointer" style={{
+          position: "absolute",
+        }}>
         </div>
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (slideIndex - i);
@@ -180,7 +180,7 @@ const Carousel = ({ slides, isPageBackground }) => {
             );
           }
         })}
-        <button className="nextSlideBtn z-20 top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handlePrevSlide}>
+        <button className="nextSlideBtn z-30 top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%] cursor-pointer" onClick={handlePrevSlide}>
           <i className="fas fa-chevron-right" />
         </button>
       </div>

@@ -6,7 +6,6 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import EventDetails from "./componets/EventDetails";
 import HomePage from "./componets/HomePage";
 import About from "./componets/About";
-import Navbar from "./componets/Navbar";
 
 class App extends Component {
   constructor(props) {
