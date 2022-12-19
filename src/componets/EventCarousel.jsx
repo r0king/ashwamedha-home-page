@@ -94,7 +94,7 @@ const Slide = ({
         onClick={()=>{
           window.location.pathname = process.env.PUBLIC_URL + "/events"
         }}
-        className="w-[90vw] slideContent md:w-[60%] bg-opacity-25"
+        className="w-[90vw] slideContent md:w-[60%] bg-opacity-40"
         style={{
           backgroundImage: `url('${image}')`,
         }}
@@ -143,7 +143,7 @@ const Carousel = ({ slides, isPageBackground }) => {
 
   return (
     <section className="slidesWrapper ">
-      <div className="slides">
+      <div className="slides ">
         <button className="prevSlideBtn z-20 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
           <i className="fas fa-chevron-left" />
         </button>
@@ -172,6 +172,7 @@ const Carousel = ({ slides, isPageBackground }) => {
                 offset={offset}
                 isPageBackground={isPageBackground}
                 key={i}
+              
               />
             );
           }

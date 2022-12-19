@@ -32,9 +32,9 @@ export default class Hero extends Component {
                   </svg>
 
                   <h2 className="mb-2 text-3xl leading-relaxed md:text-2xl sm:text-xl md:leading-snug text1">
-                    Space : The Timeless Infinity
+                    The Stallion Rises!
                   </h2>
-                  <p className="mb-4 text-sm md:text-base text-gray-50 text2">
+                  <p className="mb-4 text-lg md:text-base text-gray-50 text2">
                     Explore your favourite events and register now to showcase
                     your talent and win exciting prizes.
                   </p>

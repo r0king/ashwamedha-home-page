@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import a from "react-anchor-link-smooth-scroll";
 import Logo2 from "../assests/logo_crop.png";
 
 export default class Navbar extends Component {
@@ -92,7 +91,7 @@ export default class Navbar extends Component {
               <ul className="flex flex-col px-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
                 <li>
                   <a
-                    href={process.env.PUBLIC_URL + "/#home"}
+                    href={process.env.PUBLIC_URL}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                     aria-current="page"
                   >
@@ -117,7 +116,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <a
-                    href="#guest"
+                    href={process.env.PUBLIC_URL + "/#guest"}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Guests

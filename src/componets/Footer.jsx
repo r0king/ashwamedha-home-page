@@ -38,6 +38,18 @@ class Footer extends Component {
                       Mattoor, Ernakulam, Kerala, India
                     </label>
                   </div>
+                  <label className="text-xl mt-4">
+                    <b>CONTACT</b>
+                  </label>
+                  <div className="col-md-12 col-sm-12 col-xs-12 ">
+                    <label className="text-lg">
+                      Sohith : 9497017703
+                    </label>
+                    <br/>
+                    <label className="text-lg">
+                      Lekshmi : 8129792747
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -90,12 +102,6 @@ class Footer extends Component {
             </a>
             <a href="#Contact" className="link link-hover">
               Contact
-            </a>
-            <a href="#Jobs" className="link link-hover">
-              Jobs
-            </a>
-            <a href="#Press" className="link link-hover">
-              Press kit
             </a>
           </div>
 

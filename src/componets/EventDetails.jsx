@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import videoplayback from "../assests/Golden Stars.mp4"
+import videoplayback from "../assests/stars.mp4"
 import { useParams } from "react-router-dom";
 import eventData from "../assests/events.json";
 function withParams(Component) {
