@@ -73,7 +73,7 @@ const AboutBlock = (props: inViewport) => {
 const ViewportBlock = handleViewport(AboutBlock /* options: {}, config: {} */);
 const About = (props) => {
   return (
-    <div className="mt-12 md:mt5">
+    <div className="mt-12 md:mt5" ref={props.aboutRef}>
       <ViewportBlock />
     </div>
   );

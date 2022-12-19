@@ -11,7 +11,6 @@ export default class Hero extends Component {
   render() {
     return (
       <>
-        <Navbar />
         <video
           className="absolute top-0 bottom-0 right-0 object-cover h-full -z-20 vid"
           loop
@@ -26,7 +25,7 @@ export default class Hero extends Component {
               <div className="container flex flex-col items-center evr md:flex-row md:my-24">
                 <div className="lg:m-10 m-4 flex flex-col items-start justify-center flex-shrink w-full pt-8 pl-4 mbox lg:w-5/6">
                   <svg viewBox="0 0 1320 300">
-                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                       Ashwamedha
                     </text>
                   </svg>

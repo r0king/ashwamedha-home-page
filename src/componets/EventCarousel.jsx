@@ -217,6 +217,6 @@ const slides = [
   },
 ];
 
-const EventCarousel = () => <Carousel slides={slides} isPageBackground />;
+const EventCarousel = (props) => <Carousel slides={slides} isPageBackground />;
 
 export default EventCarousel;

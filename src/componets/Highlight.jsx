@@ -90,7 +90,7 @@ const ViewportBlock = handleViewport(AboutBlock /* options: {}, config: {} */);
 
 const Highlight = (props) => {
   return (
-    <div className="min-h-[50vh]" id="highlights">
+    <div ref={props.refHigh} className="min-h-[50vh]" id="highlights">
       <ViewportBlock />
     </div>
   );

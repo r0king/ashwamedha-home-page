@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 class Footer extends Component {
   state = {};
+
   render() {
     return (
       <>
-        <div id="contact" className=" divider lg:divider-vertical"></div>
+        <div ref={this.props.refContact} id="contact" className=" divider lg:divider-vertical"></div>
         <div className="flex justify-center">
           <div className="flex flex-col w-[75vw] md:flex-row m-5   ">
             <iframe

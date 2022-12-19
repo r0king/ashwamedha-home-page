@@ -1,4 +1,4 @@
-import React, { Component,  useState } from "react";
+import React, { Component, useState } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import handleViewport from "react-in-viewport";
 import guestImg from "../assests/Guest.jpg";
@@ -6,11 +6,14 @@ import guestImg from "../assests/Guest.jpg";
 class GuestBlock extends Component {
   render() {
     return (
-      <div >
-        <section >
+      <div>
+        <section>
           <div className="h-[32rem] ">
             <div className="container px-6 py-10 mx-auto">
-              <h1 id="guest" className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+              <h1
+                id="guest"
+                className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"
+              >
                 Special Guests
               </h1>
               <div className="flex justify-center mx-auto mt-6">
@@ -19,10 +22,10 @@ class GuestBlock extends Component {
                 <span className="inline-block w-1 h-1 rounded-full bg-neutral-content" />
               </div>
               <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300 text-lg">
-              All the mavericks, the curious ones, the ones who set the pace, take action and make things happen, are headed to Adi Shankara Institute of Engineering and Technology.
-              WHY?
-              Because we have Mentalist ARJUN on stage 🔥 on behalf of Ashwamedha'22. 
-
+                All the mavericks, the curious ones, the ones who set the pace,
+                take action and make things happen, are headed to Adi Shankara
+                Institute of Engineering and Technology. WHY? Because we have
+                Mentalist ARJUN on stage 🔥 on behalf of Ashwamedha'22.
               </p>
             </div>
           </div>
@@ -37,7 +40,6 @@ class GuestBlock extends Component {
                 Arjun Satheesh
               </h1>
               <p className="mt-2 capitalize ">Mentalist</p>
-             
             </div>
           </div>
         </section>
@@ -80,7 +82,7 @@ const ViewportBlock = handleViewport(
 
 const Guest = (props) => {
   return (
-    <div className="min-h-[50vh]" id="guest">
+    <div className="min-h-[50vh]" ref={props.refGuest} id="guest">
       <ViewportBlock />
     </div>
   );
