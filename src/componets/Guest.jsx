@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import handleViewport from "react-in-viewport";
-import guestImg from "../assests/Guest.jpg";
+import guestImg from "../assests/Guest-compress.jpg";
 
 class GuestBlock extends Component {
   render() {
@@ -21,7 +21,7 @@ class GuestBlock extends Component {
                 <span className="inline-block w-3 h-1 mx-1 rounded-full bg-neutral-content" />
                 <span className="inline-block w-1 h-1 rounded-full bg-neutral-content" />
               </div>
-              <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300 text-lg">
+              <p className="max-w-2xl mx-auto mt-6 text-lg text-center text-gray-500 dark:text-gray-300">
                 All the mavericks, the curious ones, the ones who set the pace,
                 take action and make things happen, are headed to Adi Shankara
                 Institute of Engineering and Technology. WHY? Because we have
@@ -29,7 +29,7 @@ class GuestBlock extends Component {
               </p>
             </div>
           </div>
-          <div className="container flex items-center justify-center px-6 py-16 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
+          <div className="container flex items-center justify-center px-6 py-16 mx-auto -mt-72 sm:-mt-80 ">
             <div className="mt-[4vh]  h-[60vh] w-[40vh] flex  flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700 ">
               <img
                 className="object-cover h-[54vh] w-[40vh] rounded-xl aspect-square"

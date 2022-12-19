@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
-import Navbar from "./Navbar";
 // import Intro from "./Intro";
 import logoImg from "../assests/logo_crop.png";
 
