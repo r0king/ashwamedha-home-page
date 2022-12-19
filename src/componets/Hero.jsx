@@ -26,7 +26,7 @@ export default class Hero extends Component {
                 <div className="lg:m-10 m-4 flex flex-col items-start justify-center flex-shrink w-full pt-8 pl-4 mbox lg:w-5/6">
                   <svg viewBox="0 0 1320 300">
                     <text x="50%" y="50%" dy=".35em" textAnchor="middle">
-                      Ashwamedha
+                      Ashwamedha' 22
                     </text>
                   </svg>
 
