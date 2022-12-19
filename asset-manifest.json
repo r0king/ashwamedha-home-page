@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.b756ebe7.css",
-    "main.js": "/static/js/main.d6881954.js",
+    "main.css": "/static/css/main.480f962d.css",
+    "main.js": "/static/js/main.793d8e40.js",
     "static/js/787.ee564383.chunk.js": "/static/js/787.ee564383.chunk.js",
-    "static/media/high2.jpg": "/static/media/high2.ddca17503315ef8175ba.jpg",
-    "static/media/high1.jpg": "/static/media/high1.3dec58ce71f99a257ccf.jpg",
     "static/media/bgvideo.webm": "/static/media/bgvideo.f590ae37189f15a625ba.webm",
     "static/media/workshop-dark.png": "/static/media/workshop-dark.f6ec58f4857ef7795f48.png",
-    "static/media/high3.jpg": "/static/media/high3.a2bd9c98ce082d0548b6.jpg",
     "static/media/stars.mp4": "/static/media/stars.d93383bb4d6c3a4e58c2.mp4",
     "static/media/comp-dark.jpg": "/static/media/comp-dark.bc558dbd56b989c4b9bf.jpg",
     "static/media/about.jpg": "/static/media/about.d4dede094ea594f4a848.jpg",
     "static/media/funzone-dark.jpg": "/static/media/funzone-dark.13cc573a74e99282d205.jpg",
     "static/media/logo_crop.png": "/static/media/logo_crop.6d78a30974cb308f08af.png",
+    "static/media/high1.jpg": "/static/media/high1.3b1c330f0f55da8a5be4.jpg",
+    "static/media/high2.jpg": "/static/media/high2.68d872831441a71eb691.jpg",
+    "static/media/high3.jpg": "/static/media/high3.160a3407d855455c152b.jpg",
     "static/media/Guest-compress.jpg": "/static/media/Guest-compress.b5ba8d49b31a31ecf379.jpg",
     "index.html": "/index.html",
-    "main.b756ebe7.css.map": "/static/css/main.b756ebe7.css.map",
-    "main.d6881954.js.map": "/static/js/main.d6881954.js.map",
+    "main.480f962d.css.map": "/static/css/main.480f962d.css.map",
+    "main.793d8e40.js.map": "/static/js/main.793d8e40.js.map",
     "787.ee564383.chunk.js.map": "/static/js/787.ee564383.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b756ebe7.css",
-    "static/js/main.d6881954.js"
+    "static/css/main.480f962d.css",
+    "static/js/main.793d8e40.js"
   ]
 }
