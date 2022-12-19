@@ -28,10 +28,7 @@ const AboutBlock = (props: inViewport) => {
     <div ref={forwardedRef} id="about">
       {transition((style, item) =>
         item ? (
-          <animated.div
-            className="md:h-[85vh] w-full overflow-hidden "
-            style={style}
-          >
+          <animated.div className="w-full overflow-hidden " style={style}>
             <AboutContent />
           </animated.div>
         ) : (
@@ -64,7 +61,7 @@ export default withParams(About);
 class AboutContent extends Component {
   render() {
     return (
-      <div className="flex flex-col justify-center h-full overflow-hidden">
+      <div className="flex flex-col justify-center h-full overflow-x-hidden">
         <div className="justify-center flex-auto p-4 lg:-mx-6 lg:flex lg:items-center sm:flex sm:items-center">
           <div
             className={
@@ -73,12 +70,13 @@ class AboutContent extends Component {
                 : "flex flex-col justify-center w-full h-full rounded-lg lg:w-1/4 sm:w-1/2 lg:mx-6 lg:h-full sm:h-full"
             }
           >
-            <div 
-                className={
-                  this.props.more
-                    ? "object-cover w-full object-center rounded-lg md:fixed md:w-[350px] top-0 md:m-5 bottom-0 flex flex-col justify-center"
-                    : ""
-                }>
+            <div
+              className={
+                this.props.more
+                  ? "object-cover w-full object-center rounded-lg md:fixed md:left-5 md:w-[350px] top-0 md:m-5 bottom-0 flex flex-col justify-center"
+                  : ""
+              }
+            >
               <img
                 className={
                   this.props.more
@@ -91,8 +89,8 @@ class AboutContent extends Component {
             </div>
           </div>
           <div id="about" className="lg:w-1/2 lg:px-6 lg:mt-0 sm:w-1/2 sm:ml-6">
-            <p className="mt-2 text-3xl font-semibold text-justify text-orange-400">
-              <span className="inline-block w-16 h-0.5 bg-orange-400  mb-2 mr-12" />
+            <p className="mt-2 text-3xl font-semibold text-justify text-neutral-content">
+              <span className="inline-block w-16 h-0.5 bg-neutral-content  mb-2 mr-12" />
               ABOUT US
             </p>
             <p className="mt-2 text-5xl font-semibold text-justify text-white">
@@ -130,14 +128,20 @@ class AboutContent extends Component {
                 </p>
               )}
             </div>
+
             {!this.props.more && (
-              <a href="/#/about">
-                <p className="text-xl font-semibold">
-                  <span className="inline-block w-0.5 h-4 bg-orange-400 rounded-full mt-4 mr-4" />
-                  READ MORE
-                  <span className="inline-block w-0.5 h-4 bg-orange-400 rounded-full mt-4 ml-4" />
-                </p>
-              </a>
+              <div className="flex m-5 justify-start opacity-100">
+                <a
+                  className="button-style1"
+                  href={process.env.PUBLIC_URL + "/#/"}
+                  target="_self"
+                >
+                  <span className="d">
+                    <span></span>
+                  </span>
+                  <span>More Info</span>
+                </a>
+              </div>
             )}
           </div>
         </div>
