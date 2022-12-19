@@ -52,7 +52,7 @@ const AboutBlock = (props: inViewport) => {
                     Ashwamedha'22 will be a one day evebt conducted for all engineering students all over India.
                     Ashwamedha is the perfect way to jazz up the technical skills of a student in a creative way.
                   </p>
-                  <a href="#">
+                  <a href="#highlights">
                     <p className="text-xl font-semibold">
                       <span className="inline-block w-0.5 h-4 bg-orange-400 rounded-full mt-4 mr-4" />
                       READ MORE

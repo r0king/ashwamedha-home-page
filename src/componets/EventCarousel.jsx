@@ -2,7 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
-import logoImg from "../assests/logo_crop.png";
 import compImg from "../assests/events/comp.png"
 import funImg from "../assests/events/funzone.png"
 import workImg from "../assests/events/workshop.png"

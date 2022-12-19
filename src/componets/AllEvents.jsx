@@ -9,14 +9,13 @@ export default class AllEvents extends Component {
             slides: [],
         };
         this.slides = eventData;
-        console.log(this.slides);
     }
     componentDidMount() {
         const slides = this.slides;
         let slidesHtml = [];
         slides.forEach((slide) => {
             slidesHtml.push(
-                <div index={this.state.slides.length}>
+                <div index={this.state.slides.length} key={slide.id}>
                     <div className="main flex flex-shrink relative sm:w-auto max-w-[75vw] sm:max-w-[20vw] md:max-w-[25vw] max-h-[450px] transition duration-500 hover:scale-110 ">
                         <img
                             src={slide.src}
@@ -27,10 +26,10 @@ export default class AllEvents extends Component {
                             <h2 className="text-base font-bold leading-4 lg:text-xl lg:leading-5 text-primary">
                                 {slide.venue}
                             </h2>
-                            <h4 className="text-base leading-4 lg:text-lg lg:leading-5 "></h4>
+                            <h4 className="text-base leading-4 lg:text-lg lg:leading-5 ">{""}</h4>
                             <div className="work flex justify-center opacity-100">
-                                <a class="button-style1" href={process.env.PUBLIC_URL + "/" + slide.id} target="_self">
-                                    <span class="d">
+                                <a className="button-style1" href={process.env.PUBLIC_URL + "/" + slide.id} target="_self">
+                                    <span className="d">
                                         <span></span>
                                     </span>
                                     <span>More Info</span>

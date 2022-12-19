@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import a from "react-anchor-link-smooth-scroll";
 import Logo2 from "../assests/logo_crop.png";
 
 export default class Navbar extends Component {
@@ -43,7 +42,6 @@ export default class Navbar extends Component {
   };
   render() {
     const opacity = Math.min((100 / this.state.currentScrollHeight) * 2, 1);
-    console.log(opacity);
     return (
       <div>
         <nav
