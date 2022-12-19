@@ -28,7 +28,7 @@ export default class AllEvents extends Component {
                             </h2>
                             <h4 className="text-base leading-4 lg:text-lg lg:leading-5 ">{""}</h4>
                             <div className="work flex justify-center opacity-100">
-                                <a className="button-style1" href={process.env.PUBLIC_URL + "/" + slide.id} target="_self">
+                                <a className="button-style1" href={process.env.PUBLIC_URL + "/#/" + slide.id} target="_self">
                                     <span className="d">
                                         <span></span>
                                     </span>

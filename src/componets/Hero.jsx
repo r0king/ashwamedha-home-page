@@ -39,7 +39,7 @@ export default class Hero extends Component {
                     your talent and win exciting prizes.
                   </p>
                   <a
-                    href="/events"
+                    href="/#/events"
                     className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent"
                   >
                     Register Now
