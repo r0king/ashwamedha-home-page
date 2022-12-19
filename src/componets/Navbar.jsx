@@ -108,7 +108,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <a
-                    href={process.env.PUBLIC_URL + "/events"}
+                    href={process.env.PUBLIC_URL + "/#/events"}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Events

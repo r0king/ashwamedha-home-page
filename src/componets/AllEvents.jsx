@@ -44,7 +44,7 @@ export default class AllEvents extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar events={true}/>
         {this.state.loaded && (
           <div className="relative flex items-center justify-center w-full">
             <div className="w-full h-full mx-auto mt-[15vh]">
