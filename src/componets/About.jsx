@@ -133,7 +133,7 @@ class AboutContent extends Component {
               <div className="flex m-5 justify-start opacity-100">
                 <a
                   className="button-style1"
-                  href={process.env.PUBLIC_URL + "/#/"}
+                  href={process.env.PUBLIC_URL + "/#/about"}
                   target="_self"
                 >
                   <span className="d">
