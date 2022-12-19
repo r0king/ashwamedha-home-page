@@ -29,7 +29,7 @@ class GuestBlock extends Component {
               </p>
             </div>
           </div>
-          <div className="container flex items-center justify-center px-6 py-16 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
+          <div className="container flex items-center justify-center px-6 py-16 mx-auto -mt-72 sm:-mt-80 ">
             <div className="mt-[4vh]  h-[60vh] w-[40vh] flex  flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700 ">
               <img
                 className="object-cover h-[54vh] w-[40vh] rounded-xl aspect-square"
