@@ -77,24 +77,10 @@ class Footer extends Component {
           </div>
 
           <div className="grid grid-flow-col gap-4">
-            <a href="#About" className="link link-hover">
-              Home
+            <a href={process.env.PUBLIC_URL + "/#"} className="link link-hover">
+              Back to Top
             </a>
-            <a href="#Contact" className="link link-hover">
-              About
-            </a>
-            <a href="#Contact" className="link link-hover">
-              Events
-            </a>
-            <a href="#Contact" className="link link-hover">
-              Guests
-            </a>
-            <a href="#Contact" className="link link-hover">
-              Highlights
-            </a>
-            <a href="#Contact" className="link link-hover">
-              Contact
-            </a>
+         
           </div>
 
           <div>
