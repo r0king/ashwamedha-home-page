@@ -42,7 +42,6 @@ export default class Navbar extends Component {
   };
   render() {
     const opacity = Math.min((100 / this.state.currentScrollHeight) * 2, 1);
-    console.log(opacity);
     return (
       <div>
         <nav
@@ -51,7 +50,7 @@ export default class Navbar extends Component {
         >
           <div className="flex flex-wrap items-center justify-between mx-auto mr-8 navi">
             <a
-              href={process.env.PUBLIC_URL + "/"}
+              href={process.env.PUBLIC_URL + "/#"}
               className="flex items-center"
             >
               <img
@@ -91,7 +90,7 @@ export default class Navbar extends Component {
               <ul className="flex flex-col px-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
                 <li>
                   <a
-                    href={process.env.PUBLIC_URL}
+                    href={process.env.PUBLIC_URL+"/#"}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                     aria-current="page"
                   >
@@ -108,7 +107,7 @@ export default class Navbar extends Component {
                 </li>
                 <li>
                   <a
-                    href={process.env.PUBLIC_URL + "/events"}
+                    href={process.env.PUBLIC_URL + "/#/events"}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
                   >
                     Events

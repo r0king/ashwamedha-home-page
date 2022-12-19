@@ -3,9 +3,9 @@ import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
 import logoImg from "../assests/logo_crop.png";
-import compImg from "../assests/events/comp.png"
-import funImg from "../assests/events/funzone.png"
-import workImg from "../assests/events/workshop.png"
+import compImg from "../assests/events/comp-dark.jpg"
+import funImg from "../assests/events/funzone-dark.jpg"
+import workImg from "../assests/events/workshop-dark.png"
 
 const useTilt = () => {
   const ref = useRef(null);
@@ -90,6 +90,7 @@ const Slide = ({
         "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
       }}
     >
+      <div className="bg-black w- opacity-40"></div>
       <div
         onClick={()=>{
           window.location.pathname = process.env.PUBLIC_URL + "/events"
@@ -97,26 +98,28 @@ const Slide = ({
         className="w-[90vw] slideContent md:w-[60%] bg-opacity-40"
         style={{
           backgroundImage: `url('${image}')`,
+         
         }}
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="slideTitle text-5xl lg:text-6xl text-neutral-content lg:right-10" dir="auto">
+            <h2 className="text-5xl slideTitle lg:text-6xl text-neutral-content lg:right-10" dir="auto">
               {title}
             </h2>
           )}
           {subtitle && (
-            <h3 className="slideSubtitle text-5xl lg:text-6xl before:text-neutral-content lg:left-24" dir="auto">
+            <h3 className="text-5xl slideSubtitle lg:text-6xl before:text-neutral-content lg:left-24" dir="auto">
               {subtitle}
             </h3>
           )}
           {description && (
-            <p className="slideDescription text-xl lg:text-2xl" dir="auto">
+            <p className="text-xl slideDescription lg:text-2xl" dir="auto">
               {description}
             </p>
           )}
         </div>
       </div>
+      
     </div>
   );
 };
@@ -147,7 +150,7 @@ const Carousel = ({ slides, isPageBackground }) => {
         <button className="prevSlideBtn z-20 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
           <i className="fas fa-chevron-left" />
         </button>
-        <div className="wrapperSlide opacity-0 md:hidden">
+        <div className="opacity-0 wrapperSlide md:hidden">
           asdfasdf
         </div>
         {[...slides, ...slides, ...slides].map((slide, i) => {
