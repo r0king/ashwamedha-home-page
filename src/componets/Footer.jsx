@@ -78,7 +78,19 @@ class Footer extends Component {
 
           <div className="grid grid-flow-col gap-4">
             <a href="#About" className="link link-hover">
-              About us
+              Home
+            </a>
+            <a href="#Contact" className="link link-hover">
+              About
+            </a>
+            <a href="#Contact" className="link link-hover">
+              Events
+            </a>
+            <a href="#Contact" className="link link-hover">
+              Guests
+            </a>
+            <a href="#Contact" className="link link-hover">
+              Highlights
             </a>
             <a href="#Contact" className="link link-hover">
               Contact
