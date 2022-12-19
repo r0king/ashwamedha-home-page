@@ -41,16 +41,16 @@ const AboutBlock = (props: inViewport) => {
 
 const ViewportBlock = handleViewport(AboutBlock /* options: {}, config: {} */);
 const About = (props) => {
-  console.log(props);
+  
   if (!props.more) {
     return (
-      <div className="mt-12 md:mt5" ref={props.aboutRef}>
+      <div className="mt-12 md:mt5" ref={props.refAbout}>
         <ViewportBlock />
       </div>
     );
   } else {
     return (
-      <div>
+      <div ref={props.refAbout}>
         <AboutContent more={true} />
       </div>
     );

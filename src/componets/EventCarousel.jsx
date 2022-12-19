@@ -144,7 +144,6 @@ const Carousel = ({ slides, isPageBackground }) => {
   const handleNextSlide = () => {
     setSlideIndex((prev) => (prev + 1) % slides.length);
   };
-  console.log(process.env)
   return (
     <section className="slidesWrapper ">
       <div className="slides ">
@@ -160,7 +159,9 @@ const Carousel = ({ slides, isPageBackground }) => {
           style={{
             position: "absolute",
           }}
-        >ssssss</a>
+        >
+          ssssss
+        </a>
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (slideIndex - i);
 
@@ -227,6 +228,10 @@ const slides = [
   },
 ];
 
-const EventCarousel = (props) => <Carousel slides={slides} isPageBackground />;
+const EventCarousel = (props) => (
+  <div ref={props.refEvent}>
+    <Carousel slides={slides} isPageBackground />
+  </div>
+);
 
 export default EventCarousel;

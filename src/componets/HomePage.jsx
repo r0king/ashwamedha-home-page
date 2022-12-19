@@ -13,6 +13,8 @@ export default class HomePage extends Component {
     this.refGuest = React.createRef();
     this.refHigh = React.createRef();
     this.refContact = React.createRef();
+    this.refAbout = React.createRef();
+    this.refEvent = React.createRef();
   }
   render() {
     return (
@@ -22,10 +24,11 @@ export default class HomePage extends Component {
           refGuest={this.refGuest}
           refHigh={this.refHigh}
           refContact={this.refContact}
+          refEvent={this.refEvent}          
         />
         <Hero />
-        <About />
-        <EventCarousel />
+        <About refAbout={this.refAbout} />
+        <EventCarousel refEvent={this.refEvent} />
         <Guest refGuest={this.refGuest} />
         <Highlight refHigh={this.refHigh} />
         <Footer refContact={this.refContact} />

@@ -8,18 +8,13 @@ import HomePage from "./componets/HomePage";
 import About from "./componets/About";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.aboutRef = React.createRef();
-  }
-
   render() {
     return (
       <HashRouter>
         <Routes>
-          <Route path="/" element={<HomePage aboutGlobalRef={this.aboutRef} />} />
-          <Route path="/events" element={<AllEvents aboutGlobalRef={this.aboutRef}/>} />
-          {/* <Route exact path="/about" element={<About more={true}/>} /> */}
+          <Route path="/" element={<HomePage  />} />
+          <Route path="/events" element={<AllEvents />} />
+          <Route exact path="/about" element={<About more={true}/>} />
           <Route path="/:name/" element={<EventDetails />} />
         </Routes>
       </HashRouter>

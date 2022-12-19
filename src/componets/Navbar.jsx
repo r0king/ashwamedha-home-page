@@ -42,7 +42,7 @@ export default class Navbar extends Component {
   };
   render() {
     const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
-    console.log(opacity);
+    
     return (
       <div>
         <nav
@@ -89,31 +89,48 @@ export default class Navbar extends Component {
               id="navbar-default"
             >
               <ul className="flex flex-col px-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL + "/#"}
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="block py-2 pl-3 pr-4 text-white rounded cursor-pointer text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 ">
-                  <a
+                {!this.props.events && (
+                  <li>
+                    <a
+                      href={process.env.PUBLIC_URL + "/#"}
+                      className="block py-2 pl-3 pr-4 text-white rounded text-end
+                    hover:bg-opacity-75 md:border-0 hover:text-neutral-content
+                    md:p-0 "
+                      aria-current="page"
+                    >
+                      {" "}
+                      Home
+                    </a>
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refAbout.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="block py-2 pl-3 pr-4 text-white rounded cursor-pointer text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                     href={process.env.PUBLIC_URL + "/#/about"}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL + "/#/events"}
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refEvent.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
                     className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     Events
-                  </a>
-                </li>
+                  </li>
+                )}
                 {!this.props.events && (
                   <li
                     onClick={(e) => {
@@ -122,6 +139,7 @@ export default class Navbar extends Component {
                         behavior: "smooth",
                       });
                     }}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     Guests
                   </li>
