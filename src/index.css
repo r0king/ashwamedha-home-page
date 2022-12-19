@@ -12,6 +12,128 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapperSlide{
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+.slideContent {
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.7;
+  display: grid;
+  align-content: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translateX(calc(100% * var(--offset))) rotateY(calc(-45deg * var(--dir)));
+  border-radius: 15px;
+  margin: auto;
+}
+
+.slideContentInner {
+  transform-style: preserve-3d;
+  transform: translateZ(2rem);
+  transition: opacity 0.3s linear;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+.slideContentInner .slideSubtitle,
+.slideContentInner .slideTitle {
+  font-weight: normal;
+  letter-spacing: 0.2ch;
+  text-transform: uppercase;
+  margin: 0;
+}
+.slideContentInner .slideSubtitle::before {
+  content: "— ";
+}
+.slideContentInner .slideDescription {
+  margin: 0;
+  letter-spacing: 0.2ch;
+}
+
+.slide[data-active] {
+  z-index: 2;
+  pointer-events: auto;
+}
+.slide[data-active] .slideBackground {
+  opacity: 0.1;
+  transform: none;
+}
+.slide[data-active] .slideContentInner {
+  opacity: 1;
+}
+.slide[data-active] .slideContent {
+  --x: calc(var(--px) - 0.5);
+  --y: calc(var(--py) - 0.5);
+  opacity: 1;
+  transform: perspective(1000px);
+}
+.slide[data-active] .slideContent:hover {
+  transition: none;
+  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
+}
+
+.slidesWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 900px;
+}
+.slidesWrapper *,
+.slidesWrapper *::before,
+.slidesWrapper *::after {
+  position: relative;
+}
+
+.slides {
+  display: grid;
+}
+.slides > .slide {
+  grid-area: 1/-1;
+}
+.slides > .prevSlideBtn,
+.slides .nextSlideBtn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: none;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  font-size: 2rem;
+  width: 5rem;
+  height: 5rem;
+  transition: opacity 0.3s;
+  opacity: 0.7;
+  z-index: 25;
+}
+.slides > .prevSlideBtn:hover,
+.slides .nextSlideBtn:hover {
+  opacity: 1;
+}
+.slides > .prevSlideBtn:focus,
+.slides .nextSlideBtn:focus {
+  outline: none;
+}
+
