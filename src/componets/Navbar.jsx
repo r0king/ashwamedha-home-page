@@ -42,7 +42,6 @@ export default class Navbar extends Component {
   };
   render() {
     const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
-    console.log(opacity);
     return (
       <div>
         <nav
