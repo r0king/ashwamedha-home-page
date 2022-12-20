@@ -7,12 +7,17 @@ export default class AllEvents extends Component {
     super(props);
     this.state = {
       slides: [],
-      loaded: false,
     };
     this.slides = eventData;
+
+  }
+  componentDidMount() {
+    const slides = this.slides;
+    const props = this.props;
     const work = [5, 6, 10];
     const comp = [0, 1, 2, 3, 4, 7, 8];
     const general = [15, 19, 20];
+
     if (props.type === "work") {
       this.filterSlides = work;
     } else if (props.type === "comp") {
@@ -22,11 +27,6 @@ export default class AllEvents extends Component {
     } else {
       this.filterSlides = Array.from(Array(eventData.length).keys())
     }
-
-  }
-  componentDidMount() {
-    const slides = this.slides;
-
     let slidesHtml = [];
     this.filterSlides.forEach((id) => {
       slidesHtml.push(
@@ -43,31 +43,35 @@ export default class AllEvents extends Component {
         </div>
       );
     });
-    this.setState({ slides: slidesHtml, loaded: true });
+    this.setState({ slides: slidesHtml });
+
   }
   render() {
+    console.log(this.props)
     return (
       <div>
-        {/* <Navbar events={true}/> */}
-        {this.state.loaded && (
-          <div className="relative flex items-center justify-center w-full">
-            <div className="w-full h-full mx-auto mt-[5vh]">
-              <div className="pl-10 mb-8">
-                <a href={process.env.PUBLIC_URL + "/#"}>
-                  <button type="button" className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent">Back to Home</button>
-                  {/* <button type="button" className="px-8 py-3 font-semibold border rounded dark:border-orange-400 dark:text-gray-100">Back to Home</button> */}
-                </a>
-              </div>
+        {/* <div className="tabs">
+          <a href="/#/events/workshops" className={(this.props.type === "work") ? "tab tab-bordered tab-active" : "tab tab-bordered"}>Tab 1</a>
+          <a href="/#/events/competitions" className={(this.props.type === "comp") ? "tab tab-bordered tab-active" : "tab tab-bordered"}>Tab 2</a>
+          <a href="/#/events/general" className={(this.props.type === "general") ? "tab tab-bordered tab-active" : "tab tab-bordered"}>Tab 3</a>
+        </div> */}
 
-              <div
-                id="slider"
-                className="flex flex-wrap items-center justify-center mx-5 lg:gap-8 md:gap-6 gap-14"
-              >
-                {this.state.slides}
-              </div>
+        <div className="relative flex items-center justify-center w-full">
+          <div className="w-full h-full mx-auto mt-[5vh]">
+            <div className="pl-10 mb-8">
+              <a href={process.env.PUBLIC_URL + "/#"}>
+                <button type="button" className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent">Back to Home</button>
+              </a>
+            </div>
+
+            <div
+              id="slider"
+              className="flex flex-wrap items-center justify-center mx-5 lg:gap-8 md:gap-6 gap-14"
+            >
+              {this.state.slides}
             </div>
           </div>
-        )}
+        </div>
       </div>
     );
   }
