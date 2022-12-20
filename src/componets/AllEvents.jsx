@@ -50,7 +50,6 @@ export default class AllEvents extends Component {
                 <div className="pl-10 mb-8">
                     <a href={process.env.PUBLIC_URL + "/#"}>
                     <button type="button" className="px-4 py-2 bg-transparent border rounded shadow text-neutral-content border-neutral-content hover:bg-neutral-content hover:text-black hover:shadow-lg hover:border-transparent">Back to Home</button>
-            {/* <button type="button" className="px-8 py-3 font-semibold border rounded dark:border-orange-400 dark:text-gray-100">Back to Home</button> */}
             </a>
                 </div>
                
