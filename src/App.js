@@ -13,9 +13,12 @@ class App extends Component {
       <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage  />} />
-          <Route path="/events" element={<AllEvents />} />
+          <Route exact path="/events/workshops" element={<AllEvents type="work" />} />
+          <Route exact path="/events/competitions" element={<AllEvents type="comp" />} />
+          <Route exact path="/events/general" element={<AllEvents type="general" />} />
+          <Route exact path="/events/" element={<AllEvents />} />
           <Route exact path="/about" element={<About more={true}/>} />
-          <Route path="/:name/" element={<EventDetails />} />
+          <Route path="/events/:name/" element={<EventDetails />} />
         </Routes>
       </HashRouter>
     );

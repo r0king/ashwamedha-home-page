@@ -73,12 +73,12 @@ const Slide = ({
   subtitle,
   description,
   offset,
+  path,
   isPageBackground,
 }) => {
   const active = offset === 0 ? true : null;
 
-  const ref = useTilt(active);
-
+  const ref = useTilt(active);  
   return (
     <div
       ref={ref}
@@ -91,7 +91,7 @@ const Slide = ({
     >
       <div className="bg-black w- opacity-40"></div>
       <a
-        href="/#/events"
+        href={"/#/events/"+path}
         className="w-[90vw] slideContent md:w-[60%] bg-opacity-40"
         style={{
           backgroundImage: `url('${image}')`,
@@ -144,6 +144,7 @@ const Carousel = ({ slides, isPageBackground }) => {
   const handleNextSlide = () => {
     setSlideIndex((prev) => (prev + 1) % slides.length);
   };
+  const current_path = ["competitions","general","workshops"]
   return (
     <section className="slidesWrapper ">
       <div className="slides ">
@@ -154,23 +155,23 @@ const Carousel = ({ slides, isPageBackground }) => {
           <i className="fas fa-chevron-left" />
         </button>
         <a
-          href="/#/events"
+          href={"/#/events/" + current_path[slideIndex]}
           className="opacity-0 md:hidden z-20 bg-white top-0 left-0 right-0 bottom-0 cursor-pointer"
           style={{
             position: "absolute",
           }}
         >
-          ssssss
+          {slideIndex}
         </a>
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (slideIndex - i);
-
           if (typeof slide === "string") {
             return (
               <Slide
                 image={slide}
                 offset={offset}
                 isPageBackground={isPageBackground}
+                path={slide.path}
                 key={i}
               />
             );
@@ -182,6 +183,7 @@ const Carousel = ({ slides, isPageBackground }) => {
                 subtitle={slide.subtitle}
                 description={slide.description}
                 offset={offset}
+                path={slide.path}
                 isPageBackground={isPageBackground}
                 key={i}
               />
@@ -211,13 +213,15 @@ const slides = [
     subtitle: "Events",
     description: "Bring your A-game to the Ashwamedha competitions.",
     image: compImg,
+    path: "competitions"
   },
   {
     id: 2,
-    title: "Coming",
+    title: "General",
     subtitle: "Soon",
     description: "Where Fun and Tech Collide!",
     image: funImg,
+    path: "general"
   },
   {
     id: 3,
@@ -225,6 +229,7 @@ const slides = [
     subtitle: "Shops",
     description: "Experience the future, now. Join our Tech Fest workshops.",
     image: workImg,
+    path: "workshops"
   },
 ];
 
