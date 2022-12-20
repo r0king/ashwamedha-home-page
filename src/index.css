@@ -4,20 +4,11 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-}
-
-html,
-body,
-#app {
-  height: 100%;
 }
 
 #app {
@@ -26,9 +17,7 @@ body,
   justify-content: center;
 }
 
-.wrapperSlide{
-  width: 100%;
-  height: 100%;
+.wrapperSlide {
   background-color: aqua;
 }
 .slideContent {
@@ -40,7 +29,8 @@ body,
   display: grid;
   align-content: center;
   transform-style: preserve-3d;
-  transform: perspective(1000px) translateX(calc(100% * var(--offset))) rotateY(calc(-45deg * var(--dir)));
+  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+    rotateY(calc(-45deg * var(--dir)));
   border-radius: 15px;
   margin: auto;
 }
@@ -87,7 +77,8 @@ body,
 }
 .slide[data-active] .slideContent:hover {
   transition: none;
-  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
+  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+    rotateX(calc(var(--y) * -45deg));
 }
 
 .slidesWrapper {
@@ -114,8 +105,8 @@ body,
 .slides > .prevSlideBtn,
 .slides .nextSlideBtn {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border: none;
   color: white;
@@ -136,4 +127,3 @@ body,
 .slides .nextSlideBtn:focus {
   outline: none;
 }
-

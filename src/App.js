@@ -1,25 +1,25 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import "animate.css/animate.min.css";
 import AllEvents from "./componets/AllEvents";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import EventDetails from "./componets/EventDetails";
 import HomePage from "./componets/HomePage";
-import EventCarousel from "./componets/EventCarousel";
 import About from "./componets/About";
 
-function App() {
-  return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route exact path="/:name/" element={<EventDetails />} />
-        <Route path="/events" element={<AllEvents/>}/>
-        <Route path="" element={<EventCarousel/>}/>
-        <Route path="/about" element={<About/>}/>
-      </Routes>
-    </BrowserRouter>
-  );
+class App extends Component {
+  render() {
+    return (
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<HomePage  />} />
+          <Route path="/events" element={<AllEvents />} />
+          <Route exact path="/about" element={<About more={true}/>} />
+          <Route path="/:name/" element={<EventDetails />} />
+        </Routes>
+      </HashRouter>
+    );
+  }
 }
 
 export default App;

@@ -41,17 +41,17 @@ export default class Navbar extends Component {
     });
   };
   render() {
-    const opacity = Math.min((100 / this.state.currentScrollHeight) * 2, 1);
-    console.log(opacity);
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1);
+    
     return (
       <div>
         <nav
           className="fixed z-20 flex-shrink w-screen mb-3 bg-transparent border-b-2 rounded border-neutral-content"
-          style={{ opacity }}
+          style={{ opacity: opacity }}
         >
           <div className="flex flex-wrap items-center justify-between mx-auto mr-8 navi">
             <a
-              href={process.env.PUBLIC_URL + "/"}
+              href={process.env.PUBLIC_URL + "/#"}
               className="flex items-center"
             >
               <img
@@ -89,55 +89,87 @@ export default class Navbar extends Component {
               id="navbar-default"
             >
               <ul className="flex flex-col px-4 mt-4 bg-transparent md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL}
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL + "/#about"}
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
+                {!this.props.events && (
+                  <li>
+                    <a
+                      href={process.env.PUBLIC_URL + "/#"}
+                      className="block py-2 pl-3 pr-4 text-white rounded text-end
+                    hover:bg-opacity-75 md:border-0 hover:text-neutral-content
+                    md:p-0 "
+                      aria-current="page"
+                    >
+                      {" "}
+                      Home
+                    </a>
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refAbout.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="block py-2 pl-3 pr-4 text-white rounded cursor-pointer text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
+                    href={process.env.PUBLIC_URL + "/#/about"}
                   >
                     About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL + "/events"}
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refEvent.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     Events
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL + "/#guest"}
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refGuest.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     Guests
-                  </a>
-                </li>
-                <li>
-                  <a
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refHigh.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
                     href={process.env.PUBLIC_URL + "/#highlights"}
-                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
+                    className="block py-2 pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     Highlights
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={process.env.PUBLIC_URL + "/#contact"}
-                    className="block pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content  md:p-0 "
+                  </li>
+                )}
+                {!this.props.events && (
+                  <li
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.props.refContact.current.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                    className="block pl-3 pr-4 text-white rounded text-end hover:bg-opacity-75 md:border-0 hover:text-neutral-content md:p-0 "
                   >
                     Contact
-                  </a>
-                </li>
+                  </li>
+                )}
               </ul>
             </div>
           </div>

@@ -42,7 +42,9 @@ export class EventDetails extends Component {
                 <p className="py-6" dangerouslySetInnerHTML={{__html:this.event.content}}/> 
               </div>
               <div className="flex justify-start">
-              <button className="btn btn-outline mt-4 text-neutral-content ">Register</button>
+                <a href={this.event.link}>
+              <button className="btn btn-outline mt-4 text-neutral-content ">Register</button></a>
+              
               </div>
             </div>
           </div>

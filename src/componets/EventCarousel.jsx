@@ -2,10 +2,9 @@
 import React, { useState, useRef, useEffect } from "react";
 //react dom
 import PropTypes from "prop-types";
-import logoImg from "../assests/logo_crop.png";
-import compImg from "../assests/events/comp-dark.jpg"
-import funImg from "../assests/events/funzone-dark.jpg"
-import workImg from "../assests/events/workshop-dark.png"
+import compImg from "../assests/events/comp-dark.jpg";
+import funImg from "../assests/events/funzone-dark.jpg";
+import workImg from "../assests/events/workshop-dark.png";
 
 const useTilt = () => {
   const ref = useRef(null);
@@ -76,8 +75,8 @@ const Slide = ({
   offset,
   isPageBackground,
 }) => {
-  const active = offset === 0 ? true : null
-  
+  const active = offset === 0 ? true : null;
+
   const ref = useTilt(active);
 
   return (
@@ -91,24 +90,27 @@ const Slide = ({
       }}
     >
       <div className="bg-black w- opacity-40"></div>
-      <div
-        onClick={()=>{
-          window.location.pathname = process.env.PUBLIC_URL + "/events"
-        }}
+      <a
+        href="/#/events"
         className="w-[90vw] slideContent md:w-[60%] bg-opacity-40"
         style={{
           backgroundImage: `url('${image}')`,
-         
         }}
       >
         <div className="slideContentInner">
           {title && (
-            <h2 className="text-5xl slideTitle lg:text-6xl text-neutral-content lg:right-10" dir="auto">
+            <h2
+              className="text-5xl slideTitle lg:text-6xl text-neutral-content lg:right-10"
+              dir="auto"
+            >
               {title}
             </h2>
           )}
           {subtitle && (
-            <h3 className="text-5xl slideSubtitle lg:text-6xl before:text-neutral-content lg:left-24" dir="auto">
+            <h3
+              className="text-5xl slideSubtitle lg:text-6xl before:text-neutral-content lg:left-24"
+              dir="auto"
+            >
               {subtitle}
             </h3>
           )}
@@ -118,8 +120,7 @@ const Slide = ({
             </p>
           )}
         </div>
-      </div>
-      
+      </a>
     </div>
   );
 };
@@ -143,16 +144,24 @@ const Carousel = ({ slides, isPageBackground }) => {
   const handleNextSlide = () => {
     setSlideIndex((prev) => (prev + 1) % slides.length);
   };
-
   return (
     <section className="slidesWrapper ">
       <div className="slides ">
-        <button className="prevSlideBtn z-20 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]" onClick={handleNextSlide}>
+        <button
+          className="prevSlideBtn z-30 top-2/3 md:top-1/2 -left-[-1%] md:-left-[5%]"
+          onClick={handleNextSlide}
+        >
           <i className="fas fa-chevron-left" />
         </button>
-        <div className="opacity-0 wrapperSlide md:hidden">
-          asdfasdf
-        </div>
+        <a
+          href="/#/events"
+          className="opacity-0 md:hidden z-20 bg-white top-0 left-0 right-0 bottom-0 cursor-pointer"
+          style={{
+            position: "absolute",
+          }}
+        >
+          ssssss
+        </a>
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (slideIndex - i);
 
@@ -175,12 +184,14 @@ const Carousel = ({ slides, isPageBackground }) => {
                 offset={offset}
                 isPageBackground={isPageBackground}
                 key={i}
-              
               />
             );
           }
         })}
-        <button className="nextSlideBtn z-20 top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%]" onClick={handlePrevSlide}>
+        <button
+          className="nextSlideBtn z-30 top-2/3 md:top-1/2 -right-[-1%] md:-right-[5%] "
+          onClick={handlePrevSlide}
+        >
           <i className="fas fa-chevron-right" />
         </button>
       </div>
@@ -196,7 +207,7 @@ Carousel.propTypes = {
 const slides = [
   {
     id: 1,
-    title: "Competion",
+    title: "Competitive",
     subtitle: "Events",
     description: "Bring your A-game to the Ashwamedha competitions.",
     image: compImg,
@@ -217,6 +228,10 @@ const slides = [
   },
 ];
 
-const EventCarousel = () => <Carousel slides={slides} isPageBackground />;
+const EventCarousel = (props) => (
+  <div ref={props.refEvent}>
+    <Carousel slides={slides} isPageBackground />
+  </div>
+);
 
 export default EventCarousel;

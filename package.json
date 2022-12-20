@@ -2,7 +2,7 @@
   "name": "ashwamedha-home-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://r0king.github.io/ashwamedha-home-page/",
+  "homepage": "https://r0king.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +15,6 @@
     "jquery": "^3.6.2",
     "pure-react-carousel": "^1.30.1",
     "react": "^18.2.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
     "react-in-viewport": "^1.0.0-alpha.28",
     "react-router-dom": "^6.4.2",

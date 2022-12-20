@@ -20,7 +20,7 @@ class HighlightBlock extends Component {
 						</div>
 						<div className="container mx-auto space-y-24">
 							<div className="flex flex-col lg:flex-row">
-								<img src={Highlight3} alt="H3" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight3} alt="H3" className="h-80 dark:bg-gray-500 object-cover aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									
 									<h3 className="text-3xl font-bold">BMC Bicycle Stunt</h3>
@@ -31,7 +31,7 @@ But the actual Show Stopper of the event was the magnificent and spectacular BMW
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row-reverse">
-								<img src={Highlight2} alt="H2" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight2} alt="H2" className="h-80 dark:bg-gray-500 object-cover aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									
 									<h3 className="text-3xl font-bold">Tons of Events yet to be explored</h3>
@@ -41,7 +41,7 @@ But the actual Show Stopper of the event was the magnificent and spectacular BMW
 								</div>
 							</div>
 							<div className="flex flex-col lg:flex-row">
-								<img src={Highlight1} alt="H1" className="h-80 dark:bg-gray-500 aspect-video" />
+								<img src={Highlight1} alt="H1" className="h-80 dark:bg-gray-500 object-cover aspect-video" />
 								<div className="flex flex-col justify-center flex-1 p-6 ">
 									
 									<h3 className="text-3xl font-bold">Goodies & Prizes</h3>
@@ -90,7 +90,7 @@ const ViewportBlock = handleViewport(AboutBlock /* options: {}, config: {} */);
 
 const Highlight = (props) => {
   return (
-    <div className="min-h-[50vh]" id="highlights">
+    <div ref={props.refHigh} className="min-h-[50vh]" id="highlights">
       <ViewportBlock />
     </div>
   );

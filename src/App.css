@@ -31,10 +31,6 @@
     margin-left: 2.5em;
   }
 
-  .vid {
-    width: 100vw;
-  }
-
   .mbox {
     padding-top: 25vw;
   }
@@ -49,9 +45,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .vid {
-    width: 100%;
-  }
 
   .text1 {
     font-size: 2rem;
@@ -69,9 +62,6 @@
 }
 
 @media only screen and (min-width: 1260px) and (max-width: 1536px) {
-  .vid {
-    width: 100%;
-  }
 
   .text1 {
     font-size: 2.5rem;
@@ -382,21 +372,21 @@ textarea.style1 {
   position: absolute;
   width: 1px;
   transition: all 500ms ease-in-out;
-  background-color: orangered;
+  background-color: #FB923C;
 }
 
 .button-style1 .d:before {
   top: 0;
   left: 45%;
   right: 10%;
-  background: orangered;
+  background: #FB923C;
 }
 
 .button-style1 .d:after {
   left: 10%;
   right: 65%;
   bottom: 0;
-  background: orangered;
+  background: #FB923C;
 
   @keyframes glitch-2 {
     1% {
@@ -421,7 +411,7 @@ svg text {
   animation: stroke 5s infinite alternate;
   stroke-width: 2;
   stroke: #365fa0;
-  font-size: 11rem;
+  font-size: 9rem;
 }
 
 @keyframes stroke {
