@@ -17,7 +17,7 @@ export default class AllEvents extends Component {
       const work = [
         0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34,
       ];
-      const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43];
+      const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43,45];
       const general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40];
       this.filterSlides = [];
 
@@ -55,7 +55,7 @@ export default class AllEvents extends Component {
     const work = [
       0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34,
     ];
-    const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43];
+    const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43,45];
     const general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40];
     this.filterSlides = [];
     if (props.type === "work") {
