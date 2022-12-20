@@ -14,9 +14,12 @@ export default class AllEvents extends Component {
     if (this.props !== prevProps) {
       const slides = this.slides;
       const props = this.props;
-      const work = [0,5,6,10,12,14,15,16,18,19,20,21,22,25,28,31,34];
-      const comp = [1,3,4,9,11,17,23,24,27,33,35,37,41,42,43];
-      const general = [2,7,8,13,26,29,32,36,39,40];
+      const work = [
+        0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34,
+      ];
+      const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43];
+      const general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40];
+      this.filterSlides = [];
 
       if (props.type === "work") {
         this.filterSlides = work;
@@ -49,10 +52,12 @@ export default class AllEvents extends Component {
   componentDidMount() {
     const slides = this.slides;
     const props = this.props;
-    const work = [0,5,6,10,12,14,15,16,18,19,20,21,22,25,28,31,34];
-    const comp = [0, 1, 2, 3, 4, 7, 8];
-    const general = [15, 19, 20];
-
+    const work = [
+      0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34,
+    ];
+    const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43];
+    const general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40];
+    this.filterSlides = [];
     if (props.type === "work") {
       this.filterSlides = work;
     } else if (props.type === "comp") {
@@ -62,6 +67,7 @@ export default class AllEvents extends Component {
     } else {
       this.filterSlides = Array.from(Array(eventData.length).keys());
     }
+    console.log(this.filterSlides);
     let slidesHtml = [];
     this.filterSlides.forEach((id) => {
       slidesHtml.push(
@@ -95,7 +101,7 @@ export default class AllEvents extends Component {
                 : "tab text-2xl tab-lifted"
             }
           >
-                All
+            All
           </a>
           <a
             href="/#/events/workshops"
