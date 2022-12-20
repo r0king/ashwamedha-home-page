@@ -218,7 +218,7 @@ const slides = [
   {
     id: 2,
     title: "General",
-    subtitle: "Soon",
+    subtitle: "Events",
     description: "Where Fun and Tech Collide!",
     image: funImg,
     path: "general"
