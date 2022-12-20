@@ -67,7 +67,6 @@ export default class AllEvents extends Component {
     } else {
       this.filterSlides = Array.from(Array(eventData.length).keys());
     }
-    console.log(this.filterSlides);
     let slidesHtml = [];
     this.filterSlides.forEach((id) => {
       slidesHtml.push(
