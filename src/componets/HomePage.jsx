@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import About from "./About";
 import "./Carousel.module.css";
 import Navbar from "./Navbar";
+
 export default class HomePage extends Component {
   constructor(props) {
     super(props);

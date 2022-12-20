@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import bgVideo from "../assests/bgvideo.webm";
 // import Intro from "./Intro";
 import logoImg from "../assests/logo_crop.png";
+import CountDown from "./CountDown";
 
 export default class Hero extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ export default class Hero extends Component {
                       Ashwamedha' 22
                     </text>
                   </svg>
+                  <CountDown />
 
                   <h2 className="mb-2 text-3xl leading-relaxed md:text-2xl sm:text-xl text-center md:text-left w-full md:leading-snug text1">
                     The Stallion Rises!
