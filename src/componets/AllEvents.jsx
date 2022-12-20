@@ -14,7 +14,7 @@ export default class AllEvents extends Component {
   componentDidMount() {
     const slides = this.slides;
     const props = this.props;
-    const work = [5, 6, 10];
+    const work = [0,5,6,10,12,14,15,16,18,19,20,21,22,25,28,31,34];
     const comp = [0, 1, 2, 3, 4, 7, 8];
     const general = [15, 19, 20];
 
