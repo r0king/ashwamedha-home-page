@@ -84,15 +84,25 @@ export default class AllEvents extends Component {
     return (
       <div>
         <div className="tabs fixed top-5 h-[5vh] z-10 flex w-screen justify-center">
-          <a href="/#" className={"tab text-2xl tab-bordered"}>
+          <a href="/#" className={"tab text-2xl tab-lifted"}>
             Home
+          </a>
+          <a
+            href="/#/events"
+            className={
+              this.props.type === undefined
+                ? "tab text-2xl tab-lifted tab-active"
+                : "tab text-2xl tab-lifted"
+            }
+          >
+                All
           </a>
           <a
             href="/#/events/workshops"
             className={
               this.props.type === "work"
-                ? "tab text-2xl tab-bordered tab-active"
-                : "tab text-2xl tab-bordered"
+                ? "tab text-2xl tab-lifted tab-active"
+                : "tab text-2xl tab-lifted"
             }
           >
             Work Shops
@@ -101,8 +111,8 @@ export default class AllEvents extends Component {
             href="/#/events/competitions"
             className={
               this.props.type === "comp"
-                ? "tab text-2xl tab-bordered tab-active"
-                : "tab text-2xl tab-bordered"
+                ? "tab text-2xl tab-lifted tab-active"
+                : "tab text-2xl tab-lifted"
             }
           >
             Competitions
@@ -111,8 +121,8 @@ export default class AllEvents extends Component {
             href="/#/events/general"
             className={
               this.props.type === "general"
-                ? "tab text-2xl tab-bordered tab-active"
-                : "tab text-2xl tab-bordered"
+                ? "tab text-2xl tab-lifted tab-active"
+                : "tab text-2xl tab-lifted"
             }
           >
             General
