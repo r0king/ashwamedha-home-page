@@ -33,7 +33,7 @@ export default class AllEvents extends Component {
         slidesHtml.push(
           <div index={id} key={id}>
             <a href={process.env.PUBLIC_URL + "/#/events/" + id} target="_self">
-              <div className="main flex flex-shrink relative sm:w-auto max-w-[75vw] sm:max-w-[20vw] md:max-w-[25vw] max-h-[450px] transition duration-500 hover:scale-110 ">
+              <div className="main flex flex-shrink relative sm:w-auto max-w-[75vw] sm:max-w-[20vw] md:max-w-[25vw] min-h-[450px] transition duration-500 hover:scale-110 ">
                 <img
                   src={slides[id].src}
                   alt="black chair and white table"
@@ -64,7 +64,7 @@ export default class AllEvents extends Component {
       slidesHtml.push(
         <div index={id} key={id}>
           <a href={process.env.PUBLIC_URL + "/#/events/" + id} target="_self">
-            <div className="main flex flex-shrink relative sm:w-auto max-w-[75vw] sm:max-w-[20vw] md:max-w-[25vw] max-h-[450px] transition duration-500 hover:scale-110 ">
+            <div className="main flex flex-shrink relative sm:w-auto max-w-[75vw] sm:max-w-[20vw] md:max-w-[25vw] min-h-[450px] transition duration-500 hover:scale-110 ">
               <img
                 src={slides[id].src}
                 alt="black chair and white table"
