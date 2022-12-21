@@ -9,24 +9,22 @@ export default class AllEvents extends Component {
       slides: [],
     };
     this.slides = eventData;
+    this.work = [0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34]
+    this.comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43, 44]
+    this.general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40, 45, 46]
   }
   componentDidUpdate(prevProps) {
     if (this.props !== prevProps) {
       const slides = this.slides;
       const props = this.props;
-      const work = [
-        0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34,
-      ];
-      const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43,44];
-      const general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40,45,46];
       this.filterSlides = [];
 
       if (props.type === "work") {
-        this.filterSlides = work;
+        this.filterSlides = this.work;
       } else if (props.type === "comp") {
-        this.filterSlides = comp;
+        this.filterSlides = this.comp;
       } else if (props.type === "general") {
-        this.filterSlides = general;
+        this.filterSlides = this.general;
       } else {
         this.filterSlides = Array.from(Array(eventData.length).keys());
       }
@@ -52,18 +50,12 @@ export default class AllEvents extends Component {
   componentDidMount() {
     const slides = this.slides;
     const props = this.props;
-    const work = [
-      0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34,
-    ];
-    const comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43,44,45,46];
-    const general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40,45,46];
-    this.filterSlides = [];
     if (props.type === "work") {
-      this.filterSlides = work;
+      this.filterSlides = this.work;
     } else if (props.type === "comp") {
-      this.filterSlides = comp;
+      this.filterSlides = this.comp;
     } else if (props.type === "general") {
-      this.filterSlides = general;
+      this.filterSlides = this.general;
     } else {
       this.filterSlides = Array.from(Array(eventData.length).keys());
     }
