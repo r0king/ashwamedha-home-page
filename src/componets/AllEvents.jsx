@@ -11,7 +11,7 @@ export default class AllEvents extends Component {
     this.slides = eventData;
     this.work = [0, 5, 6, 10, 12, 14, 15, 16, 18, 19, 20, 21, 22, 25, 28, 31, 34]
     this.comp = [1, 3, 4, 9, 11, 17, 23, 24, 27, 33, 35, 37, 41, 42, 43, 44]
-    this.general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40, 45, 46]
+    this.general = [2, 7, 8, 13, 26, 29, 32, 36, 39, 40, 45, 46,47]
   }
   componentDidUpdate(prevProps) {
     if (this.props !== prevProps) {
