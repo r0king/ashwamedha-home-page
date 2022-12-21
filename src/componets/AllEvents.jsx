@@ -127,7 +127,7 @@ export default class AllEvents extends Component {
         </div>
 
         <div className="relative flex items-center justify-center w-full">
-          <div className="w-full h-full mx-auto mt-[5vh]">
+          <div className="w-full h-full mx-auto my-[5vh]">
             <div
               id="slider"
               className="flex mt-10 flex-wrap items-center justify-center mx-5 lg:gap-8 md:gap-6 gap-14"

@@ -22,8 +22,8 @@ export default class Hero extends Component {
         <div className="h-screen bg-black/60 vid">
           <section>
             <div className="py-1 text-white opacity-90">
-              <div className="container flex flex-col items-center evr md:flex-row md:my-24">
-                <div className="lg:m-10 m-4 flex flex-col  h-[85vh] pb-20 md:pb-0 justify-center flex-shrink w-full pt-8 pl-4 mbox lg:w-5/6">
+              <div className="container flex flex-col items-center evr md:flex-row md:my-[10vh]">
+                <div className="lg:m-10-4 flex flex-col lg:justify-start h-[85vh] pb-20 md:pb-0 justify-center flex-shrink w-full lg:pt-0 pt-8 pl-4 mbox lg:w-5/6">
                   <svg viewBox="0 0 1320 300" className="h-auto">
                     <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                       Ashwamedha' 22
